@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LAZARUS: Lab for the Analysis of Zombie Activity and Research into Undead Simulations</title>
+
+<link rel="shortcut icon" href="favicon.ico" />
+
+<style>
+
+#button
+{
+	font-family:Helvetica,Verdana,sans-serif;
+}
+
+#button ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#button ul li { display: inline; }
+
+#button ul li a
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #fff;
+background-color: #95BD3D;
+}
+
+#button ul li a:hover
+{
+color: #fff;
+background-color: #666666;
+}
+
+a:link {text-decoration:none;}    /* unvisited link */
+a:visited {text-decoration:none;} /* visited link */
+a:hover {text-decoration:underline;}   /* mouse over link */
+a:active {text-decoration:underline;}  /* selected link */
+
+h1,h2,h3,p
+{
+	font-family:Helvetica,Verdana,sans-serif;
+}
+
+#footer
+{
+	margin: 0 auto;
+	text-align: center;
+	color: #95BD3D;
+}
+#footer a
+{
+	color:#95BD3D;
+}
+
+#footer a:link a:visited
+{
+	text-decoration:none;
+}
+
+#footer a:hover a:active
+{
+	text-decoration:underline;
+}
+
+
+div.header
+{
+	background-color: #838175;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+div.highlight
+{
+	background-color: #FFF;
+	max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	box-shadow:7px 7px 2px #666666;
+	padding: 1%;
+}
+
+
+div.img
+{
+	background-color: #FFF;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1%;
+	text-align: center;
+	box-shadow:7px 7px 2px #666666;
+}
+
+
+</style>
+
+</head>
+
+<body bgcolor="#838175">
+<div class="header">
+<img src="pics/comingsoon-mouse.png" width="100%" />
+</div>
+
+<div class="highlight"> 
+  <h3>Connect with the Rising: <br />#lazaruslives</h3>
+	<a href="mailto:lazarus.ttu@gmail.com" target="_top"><img src="pics/icon_email.png" alt="e-mail" border="0" /></a>
+    <a href="http://www.facebook.com/lazarusttu" target="_blank"><img src="pics/icon_facebook.png" alt="facebook" /></a>
+    <a href="http://www.instagram.com/lazarus_ttu" target="_blank"><img src="pics/icon_instagram.png" alt="instagram" /></a>
+    <a href="http://www.twitter.com/lazarus_ttu" target="_blank"><img src="pics/icon_twitter.png" alt="twitter" /></a>
+    <a href="http://www.youtube.com/user/lazarusttu" target="_blank"><img src="pics/icon_youtube.png" alt="youtube" /></a>
+    <br /><br />
+    <div id="button">
+    	<ul>
+    		<li><a href="http://eepurl.com/Q-yVz" target="_blank">Join our Mailing List</a></li>
+    	</ul>
+    </div>
+    <br />
+</div>
+<br />
+<div id="footer">
+    	<p><a href="http://www.stem.ttu.edu" alt="TTU STEM Center for Outreach, Research and Education">Click here to return to TTU STEM Center for Outreach, Research &amp; Education website.</a></br />
+        <a href="http://www.math.ttu.edu" alt="TTU Department of Mathematics and Statistics">Click here to return to TTU Department of Mathematics &amp; Statistics.</a></p>
+</div>
+
+<br />
+<div class="img">
+<h1>The Evolution of the LAZARUS Case Design:</h1>
+<img src="pics/Early_Helix.jpg" width="100%" /><br /><br />
+<img src="pics/Lazarus_Front.jpg" width="100%" /><br /><br />
+<img src="pics/Lazarus_Perspective.jpg" width="100%" /><br /><br />
+<img src="pics/Perspective_front.jpg" width="100%" /><br /><br />
+<img src="pics/Angled_Perspective.jpg" width="100%" />
+</div>
+</body>
+</html>

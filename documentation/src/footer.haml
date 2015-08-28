@@ -1,0 +1,17 @@
+/ HTML footer for doxygen 1.8.8
+/ start footer part
+/ BEGIN GENERATE_TREEVIEW
+#nav-path.navpath
+  / id is needed for treeview function!
+  %ul
+    $navpath
+/ END GENERATE_TREEVIEW
+/ BEGIN !GENERATE_TREEVIEW
+%hr.footer/
+%address.footer
+  %small
+    $generatedby  
+    %a{:href => "http://www.doxygen.org/index.html"}
+      %img.footer{:alt => "doxygen", :src => "$relpath^doxygen.png"}/
+    $doxygenversion
+/ END !GENERATE_TREEVIEW
