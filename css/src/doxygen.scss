@@ -1,82 +1,122 @@
-$img_7: 'doc.png'; 
-$img_6: 'nav_g.png'; 
-$img_5: 'tab_b.png'; 
-$img_4: 'nav_f.png'; 
-$img_3: 'bc_s.png'; 
-$img_2: 'folderopen.png'; 
-$img_1: 'nav_h.png'; 
-$img_0: 'folderclosed.png'; 
-$color_66: #FBFCFD; 
-$color_65: #4665A2; 
-$color_64: #F7F8FB; 
-$color_63: #EEF1F7; 
-$color_62: #ff0000 ; 
-$color_61: #283A5D; 
-$color_60: #ff00ff ; 
-$color_59: #e08000; 
-$color_58: #F9FAFC; 
-$color_57: rgba(128, 128, 128, 0); 
-$color_56: #334975; 
-$color_55: #808080; 
-$color_54: #E8E8E8; 
-$color_53: #D0C000; 
-$color_52: rgba(0,0,0,0.05); 
-$color_51: #e8eef2; 
-$color_50: #C08050; 
-$color_49: #EBEFF6; 
-$color_48: #006318; 
-$color_47: #D8D8D8; 
-$color_46: #4A6AAA; 
-$color_45: #879ECB; 
-$color_44: rgba(255, 255, 255, 0.9); 
-$color_43: cyan; 
-$color_42: #6884BD; 
-$color_41: #602020; 
-$color_40: #C2CDE4; 
-$color_39: #ffffff; 
-$color_38: #F4F6FA; 
-$color_37: #505050; 
-$color_36: #869DCA; 
-$color_35: #354C7B; 
-$color_34: #90A5CE; 
-$color_33: #E2E8F2; 
-$color_32: #2A3D61; 
-$color_31: #800000; 
-$color_30: #D8DFEE; 
-$color_29: #700070 ; 
-$color_28: #000000 ; 
-$color_27: #C4CFE5; 
-$color_26: #A8B8D9; 
-$color_25: rgba(0, 0, 0, 0.15); 
-$color_24: #806020; 
-$color_23: #008000; 
-$color_22: #C8C8C8; 
-$color_21: #728DC1; 
-$color_20: #00D000; 
-$color_19: #364D7C; 
-$color_18: #253555; 
-$color_17: #5373B4; 
-$color_16: #374F7F; 
-$color_15: #DEE4F0; 
-$color_14: #A3B4D7; 
-$color_13: #002080; 
-$color_12: #2D4068; 
-$color_11: #3D578C; 
-$color_10: #008080; 
-$color_9: #003399; 
-$color_8: rgba(255, 255, 255, 0); 
-$color_7: #8AA0CC; 
-$color_6: #00C0E0; 
-$color_5: #000080; 
-$color_4: #9CAFD4; 
-$color_3: #3030E0; 
-$color_2: #FFFFFF; 
-$color_1: #604020; 
-$color_0: #FF0000; 
+//images
+$dociconimage: 'doc.png'; 
+$memdocrefimage: 'nav_g.png'; 
+$searchtabbackgroundimage: 'tab_b.png'; 
+$fieldtablebackgroundimage: 'nav_f.png'; 
+$navpathbackgroundimage: 'bc_s.png'; 
+$iconfopenimage: 'folderopen.png'; 
+$headerimage: 'nav_h.png'; 
+$iconfcloseimage: 'folderclosed.png'; 
+//global colors
+$globalwhite:white;
+$globalblack:black;
+$globallight: #9cafd4;
+
+//background
+$whitecolor: $globalwhite;
+$lightest: $globalwhite;
+$light: $globallight;
+$dark: #374f7f;
+$blackcolor: $globalblack;
+$shadowcolor: cyan;
+
+$background_7: $whitecolor; 
+$background_6: $whitecolor; 
+$memlistbackground: $lightest;  
+$background_5: $whitecolor; 
+$linenobackground: $light;	//bluegrey
+$inputbackground: $lightest; 
+$background_4: $lightest; 
+$linenobackground: $light;	//bluegrey
+$textshadow: $whitecolor; //transparent white
+$backgroundshadow: $shadowcolor; 
+$tocbackground: $whitecolor; 
+$background_2: $lightest; 
+$shadow: $light; //black
+$linehoverground: $light;	//bluegrey 
+$labelbackground: $dark;	//darkblue
+$tablebackground: $dark; //deep blue
+$seperator: $lightest; 
+$powertip_1: $whitecolor; //white 
+$fontbackgroundblack: $blackcolor;
+$fontbackgroundwhite: $whitecolor;
+//fonts
+//normal fonts
+$whitefont: $globalwhite;
+$blackfont: $globalblack;
+$darkfont: #4665a2;
+$darkerfont:#283a5d;
+$brightfont: #000080;
+
+$font_2: $darkfont;			 
+$navpathfont_3: $darkerfont;		
+$navpathhoverfont: #6884BD;		//light blue
+$navfont: $darkfont;		
+$font_1: $darkerfont;			
+$searchcolorfont_2: $brightfont;	
+$navpathfont: $blackfont;
+$searchfont: $brightfont;	 
+$tablecolorfont: $whitefont; 
+//special fonts
+//keep as is for now
+$vhdllogicfont: #ff0000 ; 
+$vhdldigitfont: #ff00ff ; 
+$keywordflowfont: #e08000; 
+$citelistfont: #334975; 
+$powertipfont: #006318; 
+$paramnamefont: #602020; 
+$groupheaderfont: #354C7B; 
+$addressfont_2: #2A3D61; 
+$commentfont: #800000; 
+$vhdlkeywordfont: #700070 ; 
+$vhdlcharfont: #000000 ; 
+$preprocessorfont: #806020; 
+$keywordfont: #008000; 
+$stringliteralfont: #002080; 
+$addressfont: #3D578C; 
+$charliteralfont: #008080; 
+$todo: #00C0E0; 
+$test: #3030E0; 
+$keywordtypefont: #604020; 
+$warning: #FF0000; 
+//boarders
+$whiteboarder:$globalwhite;
+$lightboarder:$globallight;
+$mediumboarder:#4a6aaa;
+$greyboarder:#808080;
+$accentboarder_1:#d0c000;
+$accentboarder_2:#c08050;
+$accentboarder_3:#00d000;
+$accentboarder_4:#2d4068;
+
+$powertipboarder_4: $whiteboarder; 
+$powertipboarder_2: $greyboarder;		
+$noteboarder: $accentboarder_1;			//mustard yellow
+$directoryboarder: $greyboarder;
+$bugboarder: $accentboarder_2;			//beash
+$hrboarder: $mediumboarder;			
+$groupheaderboarder: $lightboarder;		
+$navpathboarder: $lightboarder;		
+$powertipboarder: $whiteboarder;		
+$depreciatedboarder: $greyboarder;		//deep purple
+$indexboarder: $mediumboarder;			
+$zoomboarder: $mediumboarder;			
+$tocboarder: $lightboarder;			
+$boarder_5: $lightboarder;			
+$tableboarder: $lightboarder;			
+$boarder_4: $accentboarder_3;			//bright green
+$boarder_3: $mediumboarder;			
+$boarder_2: $lightboarder;		
+$tableboarder: $accentboarder_4;			//darkblue
+$boarder_1: $lightboarder;			
+//fonttypes
+$fonts: Roboto,sans-serif;
+$fonts_2: Tahoma;
+$fonts_3: Verdana,DejaV;
 /* The standard CSS for doxygen 1.8.11 */
 
 body, table, div, p, dl {
-	font: 400 14px/22px Roboto,sans-serif;
+	font: 400 14px/22px $fonts;
 }
 
 /* @group Heading Levels */
@@ -86,15 +126,15 @@ h1.groupheader {
 }
 
 .title {
-	font: 400 14px/28px Roboto,sans-serif;
+	font: 400 14px/28px $fonts;
 	font-size: 150%;
 	font-weight: bold;
 	margin: 10px 2px;
 }
 
 h2.groupheader {
-	border-bottom: 1px solid $color_45;
-	color: $color_35;
+	border-bottom: 1px solid $groupheaderboarder;
+	color: $groupheaderfont;
 	font-size: 150%;
 	font-weight: normal;
 	margin-top: 1.75em;
@@ -117,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1.glow, h2.glow, h3.glow, h4.glow, h5.glow, h6.glow {
-	text-shadow: 0 0 15px $color_43;
+	text-shadow: 0 0 15px $backgroundshadow;
 }
 
 dt {
@@ -168,8 +208,8 @@ h3.version {
 }
 
 div.qindex, div.navtab{
-	background-color: $color_49;
-	border: 1px solid $color_14;
+	background-color: $background_4;
+	border: 1px solid $boarder_2;
 	text-align: center;
 }
 
@@ -185,13 +225,13 @@ div.navtab {
 /* @group Link Styling */
 
 a {
-	color: $color_11;
+	color: $addressfont;
 	font-weight: normal;
 	text-decoration: none;
 }
 
 .contents a:visited {
-	color: $color_65;
+	color: $font_2;
 }
 
 a:hover {
@@ -204,13 +244,13 @@ a.qindex {
 
 a.qindexHL {
 	font-weight: bold;
-	background-color: $color_4;
-	color: $color_39;
-	border: 1px double $color_36;
+	background-color: $boarder_1;
+	color: $powertipboarder;
+	border: 1px double $indexboarder;
 }
 
 .contents a.qindexHL:visited {
-        color: $color_39;
+        color: $powertipboarder;
 }
 
 a.el {
@@ -221,11 +261,11 @@ a.elRef {
 }
 
 a.code, a.code:visited, a.line, a.line:visited {
-	color: $color_65; 
+	color: $font_2; 
 }
 
 a.codeRef, a.codeRef:visited, a.lineRef, a.lineRef:visited {
-	color: $color_65; 
+	color: $font_2; 
 }
 
 /* @end */
@@ -235,8 +275,8 @@ dl.el {
 }
 
 pre.fragment {
-        border: 1px solid $color_27;
-        background-color: $color_66;
+        border: 1px solid $boarder_5;
+        background-color: $background_7;
         padding: 4px 6px;
         margin: 4px 8px 4px 2px;
         overflow: auto;
@@ -250,8 +290,8 @@ pre.fragment {
 div.fragment {
         padding: 4px 6px;
         margin: 4px 8px 4px 2px;
-	background-color: $color_66;
-	border: 1px solid $color_27;
+	background-color: $background_7;
+	border: 1px solid $boarder_5;
 }
 
 div.line {
@@ -282,8 +322,8 @@ div.line {
 }
 
 div.line.glow {
-	background-color: $color_43;
-	box-shadow: 0 0 10px $color_43;
+	background-color: $backgroundshadow;
+	box-shadow: 0 0 10px $backgroundshadow;
 }
 
 
@@ -291,21 +331,21 @@ span.lineno {
 	padding-right: 4px;
 	text-align: right;
 	border-right: 2px solid #0F0;
-	background-color: $color_54;
+	background-color: $linenobackground;
         white-space: pre;
 }
 span.lineno a {
-	background-color: $color_47;
+	background-color: $linenobackground;
 }
 
 span.lineno a:hover {
-	background-color: $color_22;
+	background-color: $linehoverground;
 }
 
 div.ah, span.ah {
-	background-color: black;
+	background-color: fontbackgroundblack;
 	font-weight: bold;
-	color: $color_39;
+	color: $powertipboarder;
 	margin-bottom: 3px;
 	margin-top: 3px;
 	padding: 0.2em;
@@ -315,7 +355,7 @@ div.ah, span.ah {
 	-moz-border-radius: .5em;
 	box-shadow: 2px 2px 3px #999;
 	-webkit-box-shadow: 2px 2px 3px #999;
-	-moz-box-shadow: $color_25 2px 2px 2px;
+	-moz-box-shadow: $shadow 2px 2px 2px;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#000),color-stop(0.3, #444));
 	background-image: -moz-linear-gradient(center top, #eee 0%, #444 40%, #000);
 }
@@ -341,8 +381,8 @@ div.groupText {
 }
 
 body {
-	background-color: white;
-	color: black;
+	background-color: fontbackgroundwhite;
+	color: fontbackgroundblack;
         margin: 0;
 }
 
@@ -353,9 +393,9 @@ div.contents {
 }
 
 td.indexkey {
-	background-color: $color_49;
+	background-color: $background_4;
 	font-weight: bold;
-	border: 1px solid $color_27;
+	border: 1px solid $boarder_5;
 	margin: 2px 0px 2px 0;
 	padding: 2px 10px;
         white-space: nowrap;
@@ -363,14 +403,14 @@ td.indexkey {
 }
 
 td.indexvalue {
-	background-color: $color_49;
-	border: 1px solid $color_27;
+	background-color: $background_4;
+	border: 1px solid $boarder_5;
 	padding: 2px 10px;
 	margin: 2px 0px;
 }
 
 tr.memlist {
-	background-color: $color_63;
+	background-color: $memlistbackground;
 }
 
 p.formulaDsp {
@@ -409,52 +449,52 @@ img.footer {
 /* @group Code Colorization */
 
 span.keyword {
-	color: $color_23
+	color: $keywordfont
 }
 
 span.keywordtype {
-	color: $color_1
+	color: $keywordtypefont
 }
 
 span.keywordflow {
-	color: $color_59
+	color: $keywordflowfont
 }
 
 span.comment {
-	color: $color_31
+	color: $commentfont
 }
 
 span.preprocessor {
-	color: $color_24
+	color: $preprocessorfont
 }
 
 span.stringliteral {
-	color: $color_13
+	color: $stringliteralfont
 }
 
 span.charliteral {
-	color: $color_10
+	color: $charliteralfont
 }
 
 span.vhdldigit { 
-	color: $color_60
+	color: $vhdldigitfont
 }
 
 span.vhdlchar { 
-	color: $color_28
+	color: $vhdlcharfont
 }
 
 span.vhdlkeyword { 
-	color: $color_29
+	color: $vhdlkeywordfont
 }
 
 span.vhdllogic { 
-	color: $color_62
+	color: $vhdllogicfont
 }
 
 blockquote {
-        background-color: $color_64;
-        border-left: 2px solid $color_4;
+        background-color: $background_6;
+        border-left: 2px solid $boarder_1;
         margin: 0 24px 0 4px;
         padding: 0 12px 0 16px;
 }
@@ -463,7 +503,7 @@ blockquote {
 
 /*
 .search {
-	color: $color_9;
+	color: $searchcolorfont_2;
 	font-weight: bold;
 }
 
@@ -474,9 +514,9 @@ form.search {
 
 input.search {
 	font-size: 75%;
-	color: $color_5;
+	color: $searchfont;
 	font-weight: normal;
-	background-color: $color_51;
+	background-color: $inputbackground;
 }
 */
 
@@ -487,18 +527,18 @@ td.tiny {
 .dirtab {
 	padding: 4px;
 	border-collapse: collapse;
-	border: 1px solid $color_14;
+	border: 1px solid $boarder_2;
 }
 
 th.dirtab {
-	background: $color_49;
+	background: $background_4;
 	font-weight: bold;
 }
 
 hr {
 	height: 0px;
 	border: none;
-	border-top: 1px solid $color_46;
+	border-top: 1px solid $hrboarder;
 }
 
 hr.footer {
@@ -526,14 +566,14 @@ table.memberdecls {
 }
 
 .memberdecls td.glow, .fieldtable tr.glow {
-	background-color: $color_43;
-	box-shadow: 0 0 15px $color_43;
+	background-color: $backgroundshadow;
+	box-shadow: 0 0 15px $backgroundshadow;
 }
 
 .mdescLeft, .mdescRight,
 .memItemLeft, .memItemRight,
 .memTemplItemLeft, .memTemplItemRight, .memTemplParams {
-	background-color: $color_58;
+	background-color: $background_5;
 	border: none;
 	margin: 4px;
 	padding: 1px 0 0 8px;
@@ -545,7 +585,7 @@ table.memberdecls {
 }
 
 .memSeparator {
-        border-bottom: 1px solid $color_15;
+        border-bottom: 1px solid $seperator;
         line-height: 1px;
         margin: 0px;
         padding: 0px;
@@ -560,7 +600,7 @@ table.memberdecls {
 }
 
 .memTemplParams {
-	color: $color_65;
+	color: $font_2;
         white-space: nowrap;
 	font-size: 80%;
 }
@@ -573,14 +613,14 @@ table.memberdecls {
 
 .memtemplate {
 	font-size: 80%;
-	color: $color_65;
+	color: $font_2;
 	font-weight: normal;
 	margin-left: 9px;
 }
 
 .memnav {
-	background-color: $color_49;
-	border: 1px solid $color_14;
+	background-color: $background_4;
+	border: 1px solid $boarder_2;
 	text-align: center;
 	margin: 2px;
 	margin-right: 15px;
@@ -605,7 +645,7 @@ table.memberdecls {
 }
 
 .memitem.glow {
-         box-shadow: 0 0 15px $color_43;
+         box-shadow: 0 0 15px $backgroundshadow;
 }
 
 .memname {
@@ -618,53 +658,53 @@ table.memberdecls {
 }
 
 .memproto, dl.reflist dt {
-        border-top: 1px solid $color_26;
-        border-left: 1px solid $color_26;
-        border-right: 1px solid $color_26;
+        border-top: 1px solid $tableboarder;
+        border-left: 1px solid $tableboarder;
+        border-right: 1px solid $tableboarder;
         padding: 6px 0px 6px 0px;
-        color: $color_18;
+        color: $font_1;
         font-weight: bold;
-        text-shadow: 0px 1px 1px $color_44;
-        background-image:url($img_4);
+        text-shadow: 0px 1px 1px $textshadow;
+        background-image:url($fieldtablebackgroundimage);
         background-repeat:repeat-x;
-        background-color: $color_33;
+        background-color: $background_2;
         /* opera specific markup */
-        box-shadow: 5px 5px 5px $color_25;
+        box-shadow: 5px 5px 5px $shadow;
         border-top-right-radius: 4px;
         border-top-left-radius: 4px;
         /* firefox specific markup */
-        -moz-box-shadow: $color_25 5px 5px 5px;
+        -moz-box-shadow: $shadow 5px 5px 5px;
         -moz-border-radius-topright: 4px;
         -moz-border-radius-topleft: 4px;
         /* webkit specific markup */
-        -webkit-box-shadow: 5px 5px 5px $color_25;
+        -webkit-box-shadow: 5px 5px 5px $shadow;
         -webkit-border-top-right-radius: 4px;
         -webkit-border-top-left-radius: 4px;
 
 }
 
 .memdoc, dl.reflist dd {
-        border-bottom: 1px solid $color_26;      
-        border-left: 1px solid $color_26;      
-        border-right: 1px solid $color_26; 
+        border-bottom: 1px solid $tableboarder;      
+        border-left: 1px solid $tableboarder;      
+        border-right: 1px solid $tableboarder; 
         padding: 6px 10px 2px 10px;
-        background-color: $color_66;
+        background-color: $background_7;
         border-top-width: 0;
-        background-image:url($img_6);
+        background-image:url($memdocrefimage);
         background-repeat:repeat-x;
-        background-color: $color_2;
+        background-color: $tablecolorfont;
         /* opera specific markup */
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
-        box-shadow: 5px 5px 5px $color_25;
+        box-shadow: 5px 5px 5px $shadow;
         /* firefox specific markup */
         -moz-border-radius-bottomleft: 4px;
         -moz-border-radius-bottomright: 4px;
-        -moz-box-shadow: $color_25 5px 5px 5px;
+        -moz-box-shadow: $shadow 5px 5px 5px;
         /* webkit specific markup */
         -webkit-border-bottom-left-radius: 4px;
         -webkit-border-bottom-right-radius: 4px;
-        -webkit-box-shadow: 5px 5px 5px $color_25;
+        -webkit-box-shadow: 5px 5px 5px $shadow;
 }
 
 dl.reflist dt {
@@ -685,7 +725,7 @@ dl.reflist dd {
 }
 
 .paramname {
-	color: $color_41;
+	color: $paramnamefont;
 	white-space: nowrap;
 }
 .paramname em {
@@ -735,18 +775,18 @@ span.mlabels {
 }
 
 span.mlabel {
-        background-color: $color_21;
-        border-top:1px solid $color_17;
-        border-left:1px solid $color_17;
-        border-right:1px solid $color_27;
-        border-bottom:1px solid $color_27;
+        background-color: $labelbackground;
+        border-top:1px solid $boarder_3;
+        border-left:1px solid $boarder_3;
+        border-right:1px solid $boarder_5;
+        border-bottom:1px solid $boarder_5;
 	text-shadow: none;
 	color: white;
 	margin-right: 4px;
 	padding: 2px 3px;
 	border-radius: 3px;
 	font-size: 7pt;
-	white-space: nowrap;
+	fontbackgroundwhite-space: nowrap;
 	vertical-align: middle;
 }
 
@@ -758,8 +798,8 @@ span.mlabel {
 
 div.directory {
         margin: 10px 0px;
-        border-top: 1px solid $color_4;
-        border-bottom: 1px solid $color_4;
+        border-top: 1px solid $boarder_1;
+        border-bottom: 1px solid $boarder_1;
         width: 100%;
 }
 
@@ -792,12 +832,12 @@ div.directory {
         padding-left: 6px;
 	padding-right: 6px;
 	padding-top: 3px;
-	border-left: 1px solid $color_52;
+	border-left: 1px solid $directoryboarder;
 }
 
 .directory tr.even {
 	padding-left: 6px;
-	background-color: $color_64;
+	background-color: $background_6;
 }
 
 .directory img {
@@ -815,11 +855,11 @@ div.directory {
         cursor: pointer;
         padding-left: 2px;
         padding-right: 2px;
-	color: $color_11;
+	color: $addressfont;
 }
 
 .arrow {
-    color: $color_4;
+    color: $boarder_1;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -839,8 +879,8 @@ div.directory {
     height: 14px;
     width: 16px;
     display: inline-block;
-    background-color: $color_21;
-    color: white;
+    background-color: $labelbackground;
+    color: fontbackgroundwhite;
     text-align: center;
     border-radius: 4px;
     margin-left: 2px;
@@ -857,7 +897,7 @@ div.directory {
     width: 24px;
     height: 18px;
     margin-bottom: 4px;
-    background-image:url($img_2);
+    background-image:url($iconfopenimage);
     background-position: 0px -4px;
     background-repeat: repeat-y;
     vertical-align:top;
@@ -868,7 +908,7 @@ div.directory {
     width: 24px;
     height: 18px;
     margin-bottom: 4px;
-    background-image:url($img_0);
+    background-image:url($iconfcloseimage);
     background-position: 0px -4px;
     background-repeat: repeat-y;
     vertical-align:top;
@@ -879,7 +919,7 @@ div.directory {
     width: 24px;
     height: 18px;
     margin-bottom: 4px;
-    background-image:url($img_7);
+    background-image:url($dociconimage);
     background-position: 0px -4px;
     background-repeat: repeat-y;
     vertical-align:top;
@@ -887,7 +927,7 @@ div.directory {
 }
 
 table.directory {
-    font: 400 14px Roboto,sans-serif;
+    font: 400 14px $fonts;
 }
 
 /* @end */
@@ -904,7 +944,7 @@ div.dynheader {
 
 address {
 	font-style: normal;
-	color: $color_32;
+	color: $addressfont_2;
 }
 
 table.doxtable {
@@ -914,13 +954,13 @@ table.doxtable {
 }
 
 table.doxtable td, table.doxtable th {
-	border: 1px solid $color_12;
+	border: 1px solid $tableboarder;
 	padding: 3px 7px 2px;
 }
 
 table.doxtable th {
-	background-color: $color_16;
-	color: $color_2;
+	background-color: $tablebackground;
+	color: $tablecolorfont;
 	font-size: 110%;
 	padding-bottom: 4px;
 	padding-top: 5px;
@@ -929,14 +969,14 @@ table.doxtable th {
 table.fieldtable {
         /*width: 100%;*/
         margin-bottom: 10px;
-        border: 1px solid $color_26;
+        border: 1px solid $tableboarder;
         border-spacing: 0px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         border-radius: 4px;
-        -moz-box-shadow: $color_25 2px 2px 2px;
-        -webkit-box-shadow: 2px 2px 2px $color_25;
-        box-shadow: 2px 2px 2px $color_25;
+        -moz-box-shadow: $shadow 2px 2px 2px;
+        -webkit-box-shadow: 2px 2px 2px $shadow;
+        box-shadow: 2px 2px 2px $shadow;
 }
 
 .fieldtable td, .fieldtable th {
@@ -945,8 +985,8 @@ table.fieldtable {
 
 .fieldtable td.fieldtype, .fieldtable td.fieldname {
         white-space: nowrap;
-        border-right: 1px solid $color_26;
-        border-bottom: 1px solid $color_26;
+        border-right: 1px solid $tableboarder;
+        border-bottom: 1px solid $tableboarder;
         vertical-align: top;
 }
 
@@ -955,7 +995,7 @@ table.fieldtable {
 }
 
 .fieldtable td.fielddoc {
-        border-bottom: 1px solid $color_26;
+        border-bottom: 1px solid $tableboarder;
         /*width: 100%;*/
 }
 
@@ -972,11 +1012,11 @@ table.fieldtable {
 }
 
 .fieldtable th {
-        background-image:url($img_4);
+        background-image:url($fieldtablebackgroundimage);
         background-repeat:repeat-x;
-        background-color: $color_33;
+        background-color: $background_2;
         font-size: 90%;
-        color: $color_18;
+        color: $font_1;
         padding-bottom: 4px;
         padding-top: 5px;
         text-align:left;
@@ -986,7 +1026,7 @@ table.fieldtable {
         -webkit-border-top-right-radius: 4px;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
-        border-bottom: 1px solid $color_26;
+        border-bottom: 1px solid $tableboarder;
 }
 
 
@@ -994,7 +1034,7 @@ table.fieldtable {
 	top: 0px;
 	left: 10px;
 	height: 36px;
-	background-image: url($img_5);
+	background-image: url($searchtabbackgroundimage);
 	z-index: 101;
 	overflow: hidden;
 	font-size: 13px;
@@ -1003,13 +1043,13 @@ table.fieldtable {
 .navpath ul
 {
 	font-size: 11px;
-	background-image:url($img_5);
+	background-image:url($searchtabbackgroundimage);
 	background-repeat:repeat-x;
 	background-position: 0 -5px;
 	height:30px;
 	line-height:30px;
-	color:$color_7;
-	border:solid 1px $color_40;
+	color:$navpathfont;
+	border:solid 1px $navpathboarder;
 	overflow:hidden;
 	margin:0px;
 	padding:0px;
@@ -1021,10 +1061,10 @@ table.fieldtable {
 	float:left;
 	padding-left:10px;
 	padding-right:15px;
-	background-image:url($img_3);
+	background-image:url($navpathbackgroundimage);
 	background-repeat:no-repeat;
 	background-position:right;
-	color:$color_19;
+	color:$navfont;
 }
 
 .navpath li.navelem a
@@ -1033,15 +1073,15 @@ table.fieldtable {
 	display:block;
 	text-decoration: none;
 	outline: none;
-	color: $color_61;
+	color: $navpathfont_3;
 	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
-	text-shadow: 0px 1px 1px $color_44;
+	text-shadow: 0px 1px 1px $textshadow;
 	text-decoration: none;        
 }
 
 .navpath li.navelem a:hover
 {
-	color:$color_42;
+	color:$navpathhoverfont;
 }
 
 .navpath li.footer
@@ -1053,7 +1093,7 @@ table.fieldtable {
         background-image:none;
         background-repeat:no-repeat;
         background-position:right;
-        color:$color_19;
+        color:$navfont;
         font-size: 8pt;
 }
 
@@ -1086,11 +1126,11 @@ div.ingroups a
 
 div.header
 {
-        background-image:url($img_1);
+        background-image:url($headerimage);
         background-repeat:repeat-x;
-	background-color: $color_58;
+	background-color: $background_5;
 	margin:  0px;
-	border-bottom: 1px solid $color_27;
+	border-bottom: 1px solid $boarder_5;
 }
 
 div.headertitle
@@ -1115,7 +1155,7 @@ dl.note
         margin-left:-7px;
         padding-left: 3px;
         border-left:4px solid;
-        border-color: $color_53;
+        border-color: $noteboarder;
 }
 
 dl.warning, dl.attention
@@ -1123,7 +1163,7 @@ dl.warning, dl.attention
         margin-left:-7px;
         padding-left: 3px;
         border-left:4px solid;
-        border-color: $color_0;
+        border-color: $warning;
 }
 
 dl.pre, dl.post, dl.invariant
@@ -1131,7 +1171,7 @@ dl.pre, dl.post, dl.invariant
         margin-left:-7px;
         padding-left: 3px;
         border-left:4px solid;
-        border-color: $color_20;
+        border-color: $boarder_4;
 }
 
 dl.deprecated
@@ -1139,7 +1179,7 @@ dl.deprecated
         margin-left:-7px;
         padding-left: 3px;
         border-left:4px solid;
-        border-color: $color_37;
+        border-color: $depreciatedboarder;
 }
 
 dl.todo
@@ -1147,7 +1187,7 @@ dl.todo
         margin-left:-7px;
         padding-left: 3px;
         border-left:4px solid;
-        border-color: $color_6;
+        border-color: $todo;
 }
 
 dl.test
@@ -1155,7 +1195,7 @@ dl.test
         margin-left:-7px;
         padding-left: 3px;
         border-left:4px solid;
-        border-color: $color_3;
+        border-color: $test;
 }
 
 dl.bug
@@ -1163,7 +1203,7 @@ dl.bug
         margin-left:-7px;
         padding-left: 3px;
         border-left:4px solid;
-        border-color: $color_50;
+        border-color: $bugboarder;
 }
 
 dl.section dd {
@@ -1190,21 +1230,21 @@ dl.section dd {
 
 #projectname
 {
-	font: 300% Tahoma, Arial,sans-serif;
+	font: 300% $fonts_2, $fonts;
 	margin: 0px;
 	padding: 2px 0px;
 }
     
 #projectbrief
 {
-	font: 120% Tahoma, Arial,sans-serif;
+	font: 120% $fonts_2, $fonts;
 	margin: 0px;
 	padding: 0px;
 }
 
 #projectnumber
 {
-	font: 50% Tahoma, Arial,sans-serif;
+	font: 50% $fonts_2, $fonts;
 	margin: 0px;
 	padding: 0px;
 }
@@ -1214,7 +1254,7 @@ dl.section dd {
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
-	border-bottom: 1px solid $color_17;
+	border-bottom: 1px solid $boarder_3;
 }
 
 .image
@@ -1244,7 +1284,7 @@ dl.section dd {
 
 div.zoom
 {
-	border: 1px solid $color_34;
+	border: 1px solid $zoomboarder;
 }
 
 dl.citelist {
@@ -1252,7 +1292,7 @@ dl.citelist {
 }
 
 dl.citelist dt {
-        color:$color_56;
+        color:$citelistfont;
         float:left;
         font-weight:bold;
         margin-right:10px;
@@ -1266,8 +1306,8 @@ dl.citelist dd {
 
 div.toc {
         padding: 14px 25px;
-        background-color: $color_38;
-        border: 1px solid $color_30;
+        background-color: $tocbackground;
+        border: 1px solid $tocboarder;
         border-radius: 7px 7px 7px 7px;
         float: right;
         height: auto;
@@ -1277,15 +1317,15 @@ div.toc {
 
 div.toc li {
         background: url("bdwn.png") no-repeat scroll 0 5px transparent;
-        font: 10px/1.2 Verdana,DejaVu Sans,Geneva,sans-serif;
+        font: 10px/1.2 $fonts_3 $fonts;
         margin-top: 5px;
         padding-left: 10px;
         padding-top: 2px;
 }
 
 div.toc h3 {
-        font: bold 12px/1.2 Arial,FreeSans,sans-serif;
-	color: $color_65;
+        font: bold 12px/1.2 $fonts;
+	color: $font_2;
         border-bottom: 0 none;
         margin: 0;
 }
@@ -1347,7 +1387,7 @@ tr.heading h2 {
 #powerTip {
 	cursor: default;
 	white-space: nowrap;
-	background-color: white;
+	background-color: fontbackgroundwhite;
 	border: 1px solid gray;
 	border-radius: 4px 4px 4px 4px;
 	box-shadow: 1px 1px 7px gray;
@@ -1374,13 +1414,13 @@ tr.heading h2 {
 }
 
 #powerTip div.ttdeci {
-        color: $color_48;
+        color: $powertipfont;
 }
 
 #powerTip div {
         margin: 0px;
         padding: 0px;
-        font: 12px/16px Roboto,sans-serif;
+        font: 12px/16px $fonts;
 }
 
 #powerTip:before, #powerTip:after {
@@ -1408,14 +1448,14 @@ tr.heading h2 {
 #powerTip.w:after,  #powerTip.e:after,
 #powerTip.nw:after, #powerTip.ne:after,
 #powerTip.sw:after, #powerTip.se:after {
-	border-color: $color_8;
+	border-color: $powertip_1;
 }
 
 #powerTip.n:before,  #powerTip.s:before,
 #powerTip.w:before,  #powerTip.e:before,
 #powerTip.nw:before, #powerTip.ne:before,
 #powerTip.sw:before, #powerTip.se:before {
-	border-color: $color_57;
+	border-color: $powertipboarder_4;
 }
 
 #powerTip.n:after,  #powerTip.n:before,
@@ -1425,12 +1465,12 @@ tr.heading h2 {
 }
 
 #powerTip.n:after, #powerTip.ne:after, #powerTip.nw:after {
-	border-top-color: $color_39;
+	border-top-color: $powertipboarder;
 	border-width: 10px;
 	margin: 0px -10px;
 }
 #powerTip.n:before {
-	border-top-color: $color_55;
+	border-top-color: $powertipboarder_2;
 	border-width: 11px;
 	margin: 0px -11px;
 }
@@ -1453,13 +1493,13 @@ tr.heading h2 {
 }
 
 #powerTip.s:after, #powerTip.se:after, #powerTip.sw:after {
-	border-bottom-color: $color_39;
+	border-bottom-color: $powertipboarder;
 	border-width: 10px;
 	margin: 0px -10px;
 }
 
 #powerTip.s:before, #powerTip.se:before, #powerTip.sw:before {
-	border-bottom-color: $color_55;
+	border-bottom-color: $powertipboarder_2;
 	border-width: 11px;
 	margin: 0px -11px;
 }
@@ -1480,13 +1520,13 @@ tr.heading h2 {
 	left: 100%;
 }
 #powerTip.e:after {
-	border-left-color: $color_39;
+	border-left-color: $powertipboarder;
 	border-width: 10px;
 	top: 50%;
 	margin-top: -10px;
 }
 #powerTip.e:before {
-	border-left-color: $color_55;
+	border-left-color: $powertipboarder_2;
 	border-width: 11px;
 	top: 50%;
 	margin-top: -11px;
@@ -1496,13 +1536,13 @@ tr.heading h2 {
 	right: 100%;
 }
 #powerTip.w:after {
-	border-right-color: $color_39;
+	border-right-color: $powertipboarder;
 	border-width: 10px;
 	top: 50%;
 	margin-top: -10px;
 }
 #powerTip.w:before {
-	border-right-color: $color_55;
+	border-right-color: $powertipboarder_2;
 	border-width: 11px;
 	top: 50%;
 	margin-top: -11px;
