@@ -1,0 +1,13 @@
+@mixin main($image){
+	background: url($image) 10% 0 fixed; 
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 100px 0;
+}
+
+.mainpage{ 
+	@include main('../images/fire_full.jpg')
+}
+

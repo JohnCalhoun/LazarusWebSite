@@ -1,6 +1,6 @@
 STAGE=../staging/documentation
 
-.PHONY:stage documentation prep clean_compiled clean_compiled clean_build documentation
+.PHONY:stage documentation prep clean_compiled clean_build clean directory compiled all documentation
 
 clean_compiled:
 	rm ./compiled/*
@@ -13,7 +13,7 @@ clean: clean_compiled clean_build
 prep:
 	cd ./src && make all
 
-documentation: prep
+documentation: prep /home/john/projects/flamingo/*
 	doxygen config
 
 directory:

@@ -1,0 +1,82 @@
+@mixin parallax($image){
+	background: url($image) 10% 0 fixed; 
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	padding: 100px 0;
+}
+
+#home{ 
+	@include parallax('../images/fuzzy_close.jpg')
+}
+
+#about{ 
+	@include parallax('../images/green_closeup.jpg')
+}
+		
+#schoenberg{ 
+	@include parallax('../images/fire_full.jpg') 
+}
+
+#gpu{ 
+	@include parallax('../images/purple_side_close.jpg')
+}
+
+#contact{ 
+	@include parallax('../images/green_full.jpg')
+}
+		
+#team{ 
+	@include parallax('../images/node_close.jpg') 
+}
+#support{ 
+	@include parallax('../images/purple_close.jpg')
+}
+
+#events{ 
+	@include parallax('../images/fuzzy_close.jpg')
+}
+
+$navwidth: 75px;
+.affix{
+	top: 50px;
+	width: $navwidth;
+}
+@media (min-width: 1200px){
+	.affix{
+		width: $navwidth;
+	}
+}
+
+.affix-botom{
+	position:absolute;
+	width: $navwidth;
+}
+
+@media (min-width: 1200px){
+	.affix-bottom{
+		width: $navwidth;
+	}
+}
+
+.nav  .active{
+	font-weight: bold;
+}
+
+body {
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+

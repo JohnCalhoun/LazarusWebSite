@@ -1,0 +1,58 @@
+#!/usr/bin/python
+import re
+import string
+
+css=open("doxygen.scss",'r')
+contents=css.readlines();
+output=[]
+
+
+################colors extract
+
+name=re.compile(r'\s*(.*){.*')
+color=re.compile(r'(.*):.*(\$color_\d{1,2})[ |;].*')
+
+inc=0;
+out=[]
+results=[];
+found=0;
+for line in contents:
+	if '{' in line:
+		if inc==0:
+			out=[]
+			temp=name.findall(line)
+			if temp!=[]:
+				for x in temp:
+					out.append(x)
+		inc=inc+1 
+	if '}' in line:
+		inc=inc-1
+		temp=color.findall(line)
+		if temp!=[]:
+			found=1;
+			for x in temp:
+				out.append(x)
+	temp=color.findall(line)
+	if temp!=[]:
+		found=1
+		for x in temp:
+			out.append(x)
+	if '}' in line and inc==0:
+		temp=color.findall(line)
+		if temp!=[]:
+			found=1
+			for x in temp:	
+				out.append(x)
+		if found==1:
+			results.append(out)
+			found=0
+for y in range(60):
+	target='$color_'+str(y)
+	locations=[target]
+	for r in results:
+		if target in r[1]:
+			locations.append(r[0])
+	print locations
+
+
+#print "".join(contentsnew)

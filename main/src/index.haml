@@ -1,0 +1,63 @@
+!!! 5
+
+%html 
+	%head
+		%meta(	name='viewport'
+				content='width=device-width, initial-scale=1')
+		%link( rel="stylesheet" href="./css/global.css")
+		%link( rel='stylesheet' href='./css/mainpage.css')
+		%script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+		%script(src="javascript/bootstrap.js")
+		%title
+			LAZARUS
+		%link(rel='icon' type='image/png' href='http://www.math.ttu.edu/outreach/lazarus/favicon.ico')
+	%body
+		%nav( class="navbar navbar-default")
+			%div(class="container-fluid")
+				%div(class='navbar-header')
+					%button(	type='button' 
+							class='navbar-toggle collapsed' 
+							data-toggle='collapse'
+							data-target='#main-navbar'
+							aria-expanded='false'
+							aria-controls='navbar')
+						%span(class='sr-only')
+							Toggle navigation
+						%span(class='icon-bar')
+						%span(class='icon-bar')
+					%a(class='navbar-brand' href='index.html')
+						Lazarus
+				%div(class='collapse navbar-collapse' id='main-navbar')
+					%ul( class="nav navbar-nav")
+						%li
+							%a(href='home.html') 
+								Home
+						%li 
+							%a(href='./documentation') 
+								Documentation		
+		%img(src='./images/header.png' class='img-responsive')	
+		%footer
+		.container
+			%p
+				TTU LAZARUS Supported by:
+			%ul
+				%li
+					%a{:alt => "TTU Department of Mathematics & Statistics", :href => "http://www.math.ttu.edu/", :target => "_blank"} TTU Department of Mathematics &amp; Statistics
+				%li
+					%a{:alt => "TTU STEM-CORE", :href => "http://www.stem.ttu.edu/", :target => "_blank"} TTU STEM Center for Outreach, Research &amp; Education
+				%li
+					%a{:alt => "TTU CALUE", :href => "http://www.calue.ttu.edu/", :target => "_blank"} TTU Center for Active Learning and Undergraduate Engagement
+				%li
+					%a{:alt => "National Science Foundation", :href => "http://www.nsf.gov/", :target => "_blank"} NSF
+					Award Nos:
+					%a{:href => "http://www.depts.ttu.edu/gk12/", :target => "_blank"} 0742402
+					%a{:href => "http://www.depts.ttu.edu/stem/isisp.php", :target => "_blank"} 0930257
+					%a{:href => "http://www.math.ttu.edu/outreach/prism/", :target => "_blank"} 103096
+			.address
+				%p
+					TTU LAZARUS, Box 41042, Lubbock, TX 79409-1042
+					(806) 742-2566
+				%a{:href => "mailto:webmaster.stem@ttu.edu"} 
+					webmaster.stem@ttu.edu
+				%a{:href => "http://www.ttu.edu/", :target => "_blank"} 
+					Texas Tech University

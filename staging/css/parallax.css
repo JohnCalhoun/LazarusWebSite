@@ -1,0 +1,93 @@
+#home {
+  background: url("../images/fuzzy_close.jpg") 10% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0; }
+
+#about {
+  background: url("../images/green_closeup.jpg") 10% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0; }
+
+#schoenberg {
+  background: url("../images/fire_full.jpg") 10% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0; }
+
+#gpu {
+  background: url("../images/purple_side_close.jpg") 10% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0; }
+
+#contact {
+  background: url("../images/green_full.jpg") 10% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0; }
+
+#team {
+  background: url("../images/node_close.jpg") 10% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0; }
+
+#support {
+  background: url("../images/purple_close.jpg") 10% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0; }
+
+#events {
+  background: url("../images/fuzzy_close.jpg") 10% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 100px 0; }
+
+.affix {
+  top: 50px;
+  width: 75px; }
+
+@media (min-width: 1200px) {
+  .affix {
+    width: 75px; } }
+.affix-botom {
+  position: absolute;
+  width: 75px; }
+
+@media (min-width: 1200px) {
+  .affix-bottom {
+    width: 75px; } }
+.nav .active {
+  font-weight: bold; }
+
+body {
+  position: relative; }
+
+/*# sourceMappingURL=parallax.css.map */

@@ -1,4 +1,4 @@
-.PHONY:publish clean javascript
+.PHONY:publish clean javascript css documentation main images font_directory fonts all publish
 
 css:
 	cd ./css && make all
@@ -7,6 +7,9 @@ documentation:css
 
 main:
 	cd ./main && make all
+images:
+	cd ./photos && make all
+
 
 font_directory:
 	mkdir -p ./staging/fonts
@@ -19,7 +22,7 @@ clean:
 javascript:
 	cd ./javascript && make all
 
-all:clean documentation main javascript
+all:clean documentation main javascript images
 
 publish:all
 	cp -r ./staging/* /var/www/html/lazarus

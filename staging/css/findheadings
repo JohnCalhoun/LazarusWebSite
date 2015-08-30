@@ -1,0 +1,52 @@
+#!/usr/bin/python
+import re
+import string
+import os
+
+css=open("doxygen.scss",'r')
+contents=css.readlines();
+output=[]
+
+
+################colors extract
+
+name=re.compile(r'\s*(.*){.*')
+color=re.compile(r'\s*(.*)\s*:.*(\$color_\d{1,2})[ |;].*')
+
+def getheads(cont):
+	inc=0;
+	out=[]
+	results=[];
+	for line in cont:
+		if '{' in line:
+			if inc==0:
+				out=[]
+				temp=name.findall(line)
+				if temp!=[]:
+					for x in temp:
+						if x!='':
+							for y in x.split(","):
+								print y
+								y=y.replace(" ","")
+								results.append(y)
+			inc=inc+1 
+		if '}' in line:
+			inc=inc-1
+	return results
+doxygen=getheads(contents)
+
+other=[]
+direct='./stylesheets/bootstrap'
+for fn in os.listdir(direct):
+	 file_name=direct+"/"+fn
+	 if os.path.isfile(file_name):
+		 files=open(file_name)
+		 contents=files.readlines()
+		 files.close()
+		 for x in getheads(contents):
+			other.append(x)
+print len(doxygen)
+print set(doxygen).intersection( set(other))
+
+
+#print "".join(contentsnew)
