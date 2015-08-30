@@ -1,6 +1,6 @@
-home:home.haml
+../compiled/home.html:home.haml
 	haml home.haml ../compiled/home.html
-index:index.haml
+../compiled/index.html:index.haml
 	haml index.haml ../compiled/index.html
 	
-all:home index
+all:../compiled/home.html ../compiled/index.html

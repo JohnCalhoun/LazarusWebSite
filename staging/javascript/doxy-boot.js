@@ -3,9 +3,9 @@ $( document ).ready(function() {
     $("div.headertitle").addClass("page-header");
     $("div.title").addClass("h1");
 //add icons to verious things
-/*
-    $('li > a[href="index.html"] > span').before("<i class='fa fa-cog'></i> ");
-    $('li > a[href="index.html"] > span').text("Flamingo");
+
+    $('li > a[href="index.html"] > span').before("<i class='glyphicon glyphicon-star'></i> ");
+    $('li > a[href="index.html"] > span').text('Flamingo');
     $('li > a[href="modules.html"] > span').before("<i class='fa fa-square'></i> ");
     $('li > a[href="namespaces.html"] > span').before("<i class='fa fa-bars'></i> ");
     $('li > a[href="annotated.html"] > span').before("<i class='fa fa-list-ul'></i> ");
@@ -16,11 +16,11 @@ $( document ).ready(function() {
     $('li > a[href="functions_vars.html"] > span').before("<i class='fa fa-list'></i> ");
     $('li > a[href="functions_enum.html"] > span').before("<i class='fa fa-list'></i> ");
     $('li > a[href="functions_eval.html"] > span').before("<i class='fa fa-list'></i> ");
- */ 
+  
    $('img[src="ftv2ns.png"]').replaceWith('<span class="label label-primary">N</span> ');
     $('img[src="ftv2cl.png"]').replaceWith('<span class="label label-primary">C</span> ');
 
-    $("ul.tablist").addClass("nav nav-tabs nav-justified");
+    $("ul.tablist").addClass("nav nav-justified");
     $("ul.tablist").css("margin-top", "0.5em");
     $("ul.tablist").css("margin-bottom", "0.5em");
     $("li.current").addClass("active");

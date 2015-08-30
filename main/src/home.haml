@@ -10,6 +10,9 @@
 		%script(src="javascript/bootstrap.js")
 		%script(src='javascript/parallax.js')
 		%script(src='javascript/scrollspy.js')
+		%title
+			LAZARUS
+		%link(rel='icon' type='image/png' href='http://www.math.ttu.edu/outreach/lazarus/favicon.ico')
 	%body(data-spy='scroll' data-target='#content-container')
 		%nav( class="navbar navbar-default")
 			%div(class="container-fluid")
@@ -34,29 +37,6 @@
 						%li 
 							%a(href='./documentation') 
 								Documentation		
-		%div( class="col-md-2" id='content-container')
-			%ul(class='nav nav-pills navbar-default hidden-xs hidden-sm' id='mainnav' data-spy='affix')
-				%li
-					%a(href='#home') 
-						home
-				%li 
-					%a(href='#gpu') 
-						gpu
-				%li
-					%a(href='#about') 
-						About
-				%li 
-					%a(href='#contact') 
-						contact
-				%li
-					%a(href='#support') 
-						support
-				%li 
-					%a(href='#events') 
-						events
-				%li
-					%a(href='#schoenberg') 
-						schoenberg
 		%div(class='col-md-9')
 			%section#home{"data-speed" => "6", "data-type" => "background"}
 				.well
@@ -143,10 +123,12 @@
 						%p 
 							%strong Phone: 
 							(806) 742-2542
-			%section#team{"data-speed" => "4", "data-type" => "background"}
+			%section#group{"data-speed" => "5", "data-type" => "background"}
 				.well
 					%h1 LAZARUS Team
 					%img(alt="LAZARUS Team Photo" src="./images/team/Group.png" class="img-responsive") 
+			%section#team{"data-speed" => "4", "data-type" => "background"}
+				.well
 					%div{:style => "width:100%;overflow:auto;"}
 						%h1 The Professors
 						%img{:alt => "Dr. John Carrell", :src => "./images/team/JohnCarrell.png", :style => "float:left;margin:1em;width:25%;"}/
@@ -286,5 +268,28 @@
 				.well
 					%h1 Schoenberg Cluster Developments
 					%p The Schoenberg Cluster features a collection of computing nodes (motherboards with two GPUs and memory but no hard drives), storage nodes (motherboards with less processing power but with plenty of memory and hard drive capacity), and a single head node which manages operations across the cluster. These CAD images show a preview of the case that is currently under construction to house the cluster.
-					%p The images below trace out the evolution of the external case design and implementation. A team of undergraduate industrial engineering interns under the supervision of faculty in the TTU Department of Industrial Engineering spearheaded the case design and fabrication.
+					%p The images below trace out the evolution of the external case design and implementation. A team of undergraduate industrial engineering interns under the supervision of faculty in the TTU Department of Industrial Engineering spearheaded the case design and fabrication. fabrication
+		%div(class="col-md-2" id='content-container')
+			%ul(class='nav nav-pills navbar-default hidden-xs hidden-sm text-uppercase' id='mainnav' data-spy='affix')
+				%li
+					%a(href='#home') 
+						Home
+				%li 
+					%a(href='#about') 
+						About
+				%li
+					%a(href='#gpu') 
+						Gpu
+				%li 
+					%a(href='#contact') 
+						contact
+				%li
+					%a(href='#group')
+						Group
+				%li
+					%a(href='#team')
+						Team
+				%li
+					%a(href='#schoenberg') 
+						schoenberg
 

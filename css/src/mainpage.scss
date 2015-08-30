@@ -7,7 +7,8 @@
 	padding: 100px 0;
 }
 
-.mainpage{ 
-	@include main('../images/fire_full.jpg')
+#background-image{ 
+	background: url(../images/concrete_1.jpg) no-repeat center center fixed;
+	background-size:cover;
 }
 

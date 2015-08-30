@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AASA,SAAS;EARR,UAAU,EAAE,0CAAuB;EACnC,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,OAAO",
+"mappings": "AASA,iBAAiB;EAChB,UAAU,EAAE,2DAA2D;EACvE,eAAe,EAAC,KAAK",
 "sources": ["../src/mainpage.scss"],
 "names": [],
 "file": "mainpage.css"

@@ -11,7 +11,7 @@
 		%title
 			LAZARUS
 		%link(rel='icon' type='image/png' href='http://www.math.ttu.edu/outreach/lazarus/favicon.ico')
-	%body
+	%body()
 		%nav( class="navbar navbar-default")
 			%div(class="container-fluid")
 				%div(class='navbar-header')
@@ -35,12 +35,12 @@
 						%li 
 							%a(href='./documentation') 
 								Documentation		
-		%img(src='./images/header.png' class='img-responsive')	
+		%img(src='./images/header.png' class='img-responsive center-block')	
 		%footer
-		.container
-			%p
+		%div(class='panel panel-default small text-center')
+			%h5
 				TTU LAZARUS Supported by:
-			%ul
+			%ul(class='list-unstyled')
 				%li
 					%a{:alt => "TTU Department of Mathematics & Statistics", :href => "http://www.math.ttu.edu/", :target => "_blank"} TTU Department of Mathematics &amp; Statistics
 				%li
@@ -53,8 +53,7 @@
 					%a{:href => "http://www.depts.ttu.edu/gk12/", :target => "_blank"} 0742402
 					%a{:href => "http://www.depts.ttu.edu/stem/isisp.php", :target => "_blank"} 0930257
 					%a{:href => "http://www.math.ttu.edu/outreach/prism/", :target => "_blank"} 103096
-			.address
-				%p
+				.address
 					TTU LAZARUS, Box 41042, Lubbock, TX 79409-1042
 					(806) 742-2566
 				%a{:href => "mailto:webmaster.stem@ttu.edu"} 
