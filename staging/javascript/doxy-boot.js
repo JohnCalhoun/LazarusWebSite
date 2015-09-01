@@ -4,21 +4,24 @@ $( document ).ready(function() {
     $("div.title").addClass("h1");
 //add icons to verious things
 
-    $('li > a[href="index.html"] > span').before("<i class='glyphicon glyphicon-star'></i> ");
+    $('li > a[href="index.html"] > span').before("<i class='glyphicon glyphicon-home'></i> ");
     $('li > a[href="index.html"] > span').text('Flamingo');
-    $('li > a[href="modules.html"] > span').before("<i class='fa fa-square'></i> ");
-    $('li > a[href="namespaces.html"] > span').before("<i class='fa fa-bars'></i> ");
-    $('li > a[href="annotated.html"] > span').before("<i class='fa fa-list-ul'></i> ");
-    $('li > a[href="classes.html"] > span').before("<i class='fa fa-book'></i> ");
-    $('li > a[href="inherits.html"] > span').before("<i class='fa fa-sitemap'></i> ");
-    $('li > a[href="functions.html"] > span').before("<i class='fa fa-list'></i> ");
-    $('li > a[href="functions_func.html"] > span').before("<i class='fa fa-list'></i> ");
-    $('li > a[href="functions_vars.html"] > span').before("<i class='fa fa-list'></i> ");
-    $('li > a[href="functions_enum.html"] > span').before("<i class='fa fa-list'></i> ");
-    $('li > a[href="functions_eval.html"] > span').before("<i class='fa fa-list'></i> ");
-  
+    $('li > a[href="modules.html"] > span').before("<i class='glyphicon glyphicon-stop'></i> ");
+    $('li > a[href="namespaces.html"] > span').before("<i class='glyphicon glyphicon-minus'></i> ");
+    $('li > a[href="annotated.html"] > span').before("<i class='glyphicon glyphicon-th-list'></i> ");
+    $('li > a[href="classes.html"] > span').before("<i class='glyphicon glyphicon-book'></i> ");
+    $('li > a[href="inherits.html"] > span').before("<i class='glyphicon glyphicon-tag'></i> ");
+    $('li > a[href="functions.html"] > span').before("<i class='glyphicon glyphicon-th-large'></i> ");
+    $('li > a[href="functions_func.html"] > span').before("<i class='glyphicon glyphicon-th-large'></i> ");
+    $('li > a[href="functions_vars.html"] > span').before("<i class='glyphicon glyphicon-th-large'></i> ");
+    $('li > a[href="functions_enum.html"] > span').before("<i class='glyphicon glyphicon-th-large'></i> ");
+    $('li > a[href="functions_eva.html"] > span').before("<i class='glyphicon glyphicon-th-large'></i> ");
+  $('li > a[href="files.html"] > span').before("<i class='glyphicon glyphicon-file'></i> ");
+
    $('img[src="ftv2ns.png"]').replaceWith('<span class="label label-primary">N</span> ');
     $('img[src="ftv2cl.png"]').replaceWith('<span class="label label-primary">C</span> ');
+
+	var table='table-condensed';
 
     $("ul.tablist").addClass("nav nav-justified");
     $("ul.tablist").css("margin-top", "0.5em");
@@ -28,22 +31,22 @@ $( document ).ready(function() {
 
     $("#nav-path > ul").addClass("breadcrumb");
 
-    $("table.params").addClass("table");
+    $("table.params").addClass(table);
     $("div.ingroups").wrapInner("<small></small>");
     $("div.levels").css("margin", "0.5em");
     $("div.levels > span").addClass("btn btn-default btn-xs");
     $("div.levels > span").css("margin-right", "0.25em");
 
-    $("table.directory").addClass("table table-striped");
+    $("table.directory").addClass("table table-striped table-condensed");
     $("div.summary > a").addClass("btn btn-default btn-xs");
-    $("table.fieldtable").addClass("table");
+    $("table.fieldtable").addClass(table);
     $(".fragment").addClass("well");
     $(".memitem").addClass("panel panel-default");
     $(".memproto").addClass("panel-heading");
     $(".memdoc").addClass("panel-body");
     $("span.mlabel").addClass("label label-info");
 
-    $("table.memberdecls").addClass("table");
+    $("table.memberdecls").addClass(table);
     $("[class^=memitem]").addClass("active");
 
     $("div.ah").addClass("btn btn-default");
@@ -53,7 +56,7 @@ $( document ).ready(function() {
 
     $("div.ttc").addClass("panel panel-primary");
     $("div.ttname").addClass("panel-heading");
-    $("div.ttname a").css("color", 'white');
+    //$("div.ttname a").css("color", 'white');
     $("div.ttdef,div.ttdoc,div.ttdeci").addClass("panel-body");
 
     $('#MSearchBox').parent().remove();
@@ -61,7 +64,7 @@ $( document ).ready(function() {
     $('div.fragment.well div.line:first').css('margin-top', '15px');
     $('div.fragment.well div.line:last').css('margin-bottom', '15px');
 	
-	$('table.doxtable').removeClass('doxtable').addClass('table table-striped table-bordered').each(function(){
+	$('table.doxtable').removeClass('doxtable').addClass('table table-striped table-bordered table-condensed').each(function(){
 		$(this).prepend('<thead></thead>');
 		$(this).find('tbody > tr:first').prependTo($(this).find('thead'));
 		

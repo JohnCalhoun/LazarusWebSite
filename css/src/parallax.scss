@@ -39,9 +39,13 @@
 	@include parallax('../images/fuzzy_close.jpg')
 }
 
-$navwidth: 75px;
+$navwidth: 130px;
+.home-pillars{
+	width: $navwidth;
+}
+
 .affix{
-	top: 50px;
+	top: 100px;
 	width: $navwidth;
 }
 @media (min-width: 1200px){
@@ -57,7 +61,7 @@ $navwidth: 75px;
 
 @media (min-width: 1200px){
 	.affix-bottom{
-		width: $navwidth;
+	width: $navwidth;
 	}
 }
 
@@ -67,6 +71,7 @@ $navwidth: 75px;
 
 body {
 	position: relative;
+	background-image: url('../images/concrete_texture_1.jpg');
 }
 
 

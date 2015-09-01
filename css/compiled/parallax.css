@@ -70,24 +70,28 @@
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
   padding: 100px 0; }
 
+.home-pillars {
+  width: 130px; }
+
 .affix {
-  top: 50px;
-  width: 75px; }
+  top: 100px;
+  width: 130px; }
 
 @media (min-width: 1200px) {
   .affix {
-    width: 75px; } }
+    width: 130px; } }
 .affix-botom {
   position: absolute;
-  width: 75px; }
+  width: 130px; }
 
 @media (min-width: 1200px) {
   .affix-bottom {
-    width: 75px; } }
+    width: 130px; } }
 .nav .active {
   font-weight: bold; }
 
 body {
-  position: relative; }
+  position: relative;
+  background-image: url("../images/concrete_texture_1.jpg"); }
 
 /*# sourceMappingURL=parallax.css.map */

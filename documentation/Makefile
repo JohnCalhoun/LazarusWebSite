@@ -13,13 +13,13 @@ clean: clean_compiled clean_build
 prep:
 	cd ./src && make all
 
-documentation: prep /home/john/projects/flamingo/*
+./build: prep /home/john/projects/flamingo/*
 	doxygen config
 
 directory:
 	mkdir -p $(STAGE)
 
-stage: documentation directory
+stage: ./build directory
 	cp -r ./build/html/* $(STAGE)
 
 compile:

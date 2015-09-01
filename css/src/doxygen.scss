@@ -10,7 +10,7 @@ $headerimage: 'nav_h.png';
 $iconfcloseimage: 'folderclosed.png'; 
 //global colors
 //global
-$globalwhite:		$gray-lighter;
+$globalwhite:		darken($gray-lighter,10%);
 $globalgrey:		$gray-darker;
 $globallight:		$gray;
 $globaldark:		$gray-light;
@@ -143,6 +143,9 @@ $boarder_2: $lightboarder;
 $tableboarder: $accentboarder_4;			//darkblue
 $boarder_1: $lightboarder;			
 
+.concrete-background{
+	background-image:url('../images/concrete_texture_1.jpg'); 
+}
 body, table, div, p, dl {
 	font: 400 14px/22px $fonts;
 }
