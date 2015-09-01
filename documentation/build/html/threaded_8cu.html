@@ -59,6 +59,8 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -76,10 +78,124 @@
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">threaded.cu File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a44908bc0e35f94340d860b8ad2342112"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threaded_8cu.html#a44908bc0e35f94340d860b8ad2342112">THREADED_H</a></td></tr>
+<tr class="separator:a44908bc0e35f94340d860b8ad2342112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1057be939a077889ca0e7261e363115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threaded_8cu.html#ae1057be939a077889ca0e7261e363115">THREADED</a>(class,  function,  num_of_threads)</td></tr>
+<tr class="separator:ae1057be939a077889ca0e7261e363115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e75f6bdbbcac4fd0e44344736b4639c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threaded_8cu.html#a4e75f6bdbbcac4fd0e44344736b4639c">THREADED_T</a>(class,  function,  num_of_threads)</td></tr>
+<tr class="separator:a4e75f6bdbbcac4fd0e44344736b4639c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ae1057be939a077889ca0e7261e363115"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREADED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">function, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">num_of_threads&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> class::function##Threaded(){               \</div>
+<div class="line">        std::vector&lt; std::thread &gt; threads;     \</div>
+<div class="line">        for(<span class="keywordtype">int</span> <a class="code" href="namespaceget__benchmarks.html#a4a38dbd7fdc4501351ebfcc577a16ac5">i</a>=0; <a class="code" href="namespaceget__benchmarks.html#a4a38dbd7fdc4501351ebfcc577a16ac5">i</a>&lt;num_of_threads; <a class="code" href="namespaceget__benchmarks.html#a4a38dbd7fdc4501351ebfcc577a16ac5">i</a>++){        \</div>
+<div class="line">            threads.push_back( std::thread([<span class="keyword">this</span>](){this-&gt;<span class="keyword">function</span>##Single();}));   \</div>
+<div class="line">        };                                  \</div>
+<div class="line">        for(<span class="keyword">auto</span> &amp;t : threads){                 \</div>
+<div class="line">            t.join();                           \</div>
+<div class="line">        };                                  \</div>
+<div class="line">    };</div>
+<div class="ttc" id="namespaceget__benchmarks_html_a4a38dbd7fdc4501351ebfcc577a16ac5"><div class="ttname"><a href="namespaceget__benchmarks.html#a4a38dbd7fdc4501351ebfcc577a16ac5">get_benchmarks.i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> get_benchmarks.py:43</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a44908bc0e35f94340d860b8ad2342112"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREADED_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e75f6bdbbcac4fd0e44344736b4639c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREADED_T</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">function, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">num_of_threads&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;                        \</div>
+<div class="line">    void class&lt;T&gt;::function##Threaded(){            \</div>
+<div class="line">        std::vector&lt; std::thread &gt; threads;     \</div>
+<div class="line">        for(<span class="keywordtype">int</span> <a class="code" href="namespaceget__benchmarks.html#a4a38dbd7fdc4501351ebfcc577a16ac5">i</a>=0; <a class="code" href="namespaceget__benchmarks.html#a4a38dbd7fdc4501351ebfcc577a16ac5">i</a>&lt;num_of_threads; <a class="code" href="namespaceget__benchmarks.html#a4a38dbd7fdc4501351ebfcc577a16ac5">i</a>++){        \</div>
+<div class="line">            threads.push_back( std::thread(     \</div>
+<div class="line">                    [<span class="keyword">this</span>](){this-&gt;<span class="keyword">function</span>##Single();} \</div>
+<div class="line">                    ));                     \</div>
+<div class="line">        }                                   \</div>
+<div class="line">        for(<span class="keyword">auto</span> &amp;t: threads){                  \</div>
+<div class="line">            t.join();                           \</div>
+<div class="line">        }                                   \</div>
+<div class="line">    }</div>
+<div class="ttc" id="namespaceget__benchmarks_html_a4a38dbd7fdc4501351ebfcc577a16ac5"><div class="ttname"><a href="namespaceget__benchmarks.html#a4a38dbd7fdc4501351ebfcc577a16ac5">get_benchmarks.i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> get_benchmarks.py:43</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

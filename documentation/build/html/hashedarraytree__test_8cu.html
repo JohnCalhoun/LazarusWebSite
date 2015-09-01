@@ -59,6 +59,8 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -76,10 +78,104 @@
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">hashedarraytree_test.cu File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &lt;unified_location_p.cu&gt;</code><br />
+<code>#include &lt;host_location_p.hpp&gt;</code><br />
+<code>#include &lt;device_location_p.cu&gt;</code><br />
+<code>#include &lt;pinned_location_p.cu&gt;</code><br />
+<code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="MacroUtilities_8cpp.html">MacroUtilities.cpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="buddy__alloc__p_8cpp.html">buddy_alloc_p.cpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="HashedArrayTree_8cu.html">HashedArrayTree.cu</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &quot;hashedarraytree.test&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTreeTest.html">HashedArrayTreeTest&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aeb6f7dbb6293ab7bc6469b9ad761b0b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hashedarraytree__test_8cu.html#aeb6f7dbb6293ab7bc6469b9ad761b0b1">HASHEDARRAYTREE_THREADS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:aeb6f7dbb6293ab7bc6469b9ad761b0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbcf3c42c997889127cc676754a6fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hashedarraytree__test_8cu.html#abbbcf3c42c997889127cc676754a6fea">HOST</a>&#160;&#160;&#160;host_location_policy</td></tr>
+<tr class="separator:abbbcf3c42c997889127cc676754a6fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550689d61a261b1e4816a85a70cc5565"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hashedarraytree__test_8cu.html#a550689d61a261b1e4816a85a70cc5565">UNIFIED</a>&#160;&#160;&#160;unified_location_policy</td></tr>
+<tr class="separator:a550689d61a261b1e4816a85a70cc5565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775d096fbc3988fb7ed858b79ef44e22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hashedarraytree__test_8cu.html#a775d096fbc3988fb7ed858b79ef44e22">DEVICE</a>&#160;&#160;&#160;device_location_policy</td></tr>
+<tr class="separator:a775d096fbc3988fb7ed858b79ef44e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa09e899cbc5c94d25422680ce5fac4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hashedarraytree__test_8cu.html#adfa09e899cbc5c94d25422680ce5fac4">PINNED</a>&#160;&#160;&#160;pinned_location_policy</td></tr>
+<tr class="separator:adfa09e899cbc5c94d25422680ce5fac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a775d096fbc3988fb7ed858b79ef44e22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEVICE&#160;&#160;&#160;device_location_policy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb6f7dbb6293ab7bc6469b9ad761b0b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASHEDARRAYTREE_THREADS&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbbcf3c42c997889127cc676754a6fea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HOST&#160;&#160;&#160;host_location_policy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adfa09e899cbc5c94d25422680ce5fac4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PINNED&#160;&#160;&#160;pinned_location_policy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a550689d61a261b1e4816a85a70cc5565"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNIFIED&#160;&#160;&#160;unified_location_policy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

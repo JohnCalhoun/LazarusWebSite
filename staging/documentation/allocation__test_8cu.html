@@ -59,6 +59,8 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -76,10 +78,158 @@
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">allocation_test.cu File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="buddy__alloc__p_8cpp.html">buddy_alloc_p.cpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="standard__alloc__p_8cpp.html">standard_alloc_p.cpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="location_8cu.html">location.cu</a>&gt;</code><br />
+<code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;<a class="el" href="MacroUtilities_8cpp.html">MacroUtilities.cpp</a>&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;allocation.test&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuddyAllocTest.html">BuddyAllocTest&lt; Policy &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a7e1abcea43fa51e30cadcdfc25374346"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#a7e1abcea43fa51e30cadcdfc25374346">ALLOCATION_THREADS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a7e1abcea43fa51e30cadcdfc25374346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea705e0f225d9b2e1b256e5b3ef50678"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#aea705e0f225d9b2e1b256e5b3ef50678">TEST_CONTAINER_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:aea705e0f225d9b2e1b256e5b3ef50678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c439d7c508333242d12c0fb9cd242b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#a85c439d7c508333242d12c0fb9cd242b">TEST_SIZE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a85c439d7c508333242d12c0fb9cd242b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbcf3c42c997889127cc676754a6fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#abbbcf3c42c997889127cc676754a6fea">HOST</a>&#160;&#160;&#160;<a class="el" href="structhost.html">host</a></td></tr>
+<tr class="separator:abbbcf3c42c997889127cc676754a6fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775d096fbc3988fb7ed858b79ef44e22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#a775d096fbc3988fb7ed858b79ef44e22">DEVICE</a>&#160;&#160;&#160;<a class="el" href="structdevice.html">device</a></td></tr>
+<tr class="separator:a775d096fbc3988fb7ed858b79ef44e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73db6714b92ce9d0597bf3bb1fc30d2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#a73db6714b92ce9d0597bf3bb1fc30d2b">MANAGED</a>&#160;&#160;&#160;<a class="el" href="structunified.html">unified</a></td></tr>
+<tr class="separator:a73db6714b92ce9d0597bf3bb1fc30d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa09e899cbc5c94d25422680ce5fac4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#adfa09e899cbc5c94d25422680ce5fac4">PINNED</a>&#160;&#160;&#160;<a class="el" href="structpinned.html">pinned</a></td></tr>
+<tr class="separator:adfa09e899cbc5c94d25422680ce5fac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af923a21b8d16846845ab9500c9266376"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#af923a21b8d16846845ab9500c9266376">BUDDY</a>&#160;&#160;&#160;<a class="el" href="classbuddy__alloc__policy.html">buddy_alloc_policy</a></td></tr>
+<tr class="separator:af923a21b8d16846845ab9500c9266376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8ca8ad62b88c01b639bad62eafcbf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="allocation__test_8cu.html#a0b8ca8ad62b88c01b639bad62eafcbf1">STANDARD</a>&#160;&#160;&#160;<a class="el" href="classstandard__alloc__policy.html">standard_alloc_policy</a></td></tr>
+<tr class="separator:a0b8ca8ad62b88c01b639bad62eafcbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a7e1abcea43fa51e30cadcdfc25374346"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ALLOCATION_THREADS&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af923a21b8d16846845ab9500c9266376"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUDDY&#160;&#160;&#160;<a class="el" href="classbuddy__alloc__policy.html">buddy_alloc_policy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a775d096fbc3988fb7ed858b79ef44e22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEVICE&#160;&#160;&#160;<a class="el" href="structdevice.html">device</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbbcf3c42c997889127cc676754a6fea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HOST&#160;&#160;&#160;<a class="el" href="structhost.html">host</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73db6714b92ce9d0597bf3bb1fc30d2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MANAGED&#160;&#160;&#160;<a class="el" href="structunified.html">unified</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adfa09e899cbc5c94d25422680ce5fac4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PINNED&#160;&#160;&#160;<a class="el" href="structpinned.html">pinned</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0b8ca8ad62b88c01b639bad62eafcbf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STANDARD&#160;&#160;&#160;<a class="el" href="classstandard__alloc__policy.html">standard_alloc_policy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea705e0f225d9b2e1b256e5b3ef50678"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEST_CONTAINER_SIZE&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a85c439d7c508333242d12c0fb9cd242b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEST_SIZE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
