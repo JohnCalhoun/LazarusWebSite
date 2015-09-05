@@ -78,6 +78,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classlocation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">location&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__allocator-module.html">Allocator</a></div></div>  </div>
@@ -95,10 +96,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a28896a9ef0db3ae89f7a7268c4c3a442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlocation.html#a28896a9ef0db3ae89f7a7268c4c3a442">Delete</a> (void *)</td></tr>
 <tr class="memdesc:a28896a9ef0db3ae89f7a7268c4c3a442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will deallocate the storage pointed to by p.  <a href="#a28896a9ef0db3ae89f7a7268c4c3a442">More...</a><br /></td></tr>
 <tr class="separator:a28896a9ef0db3ae89f7a7268c4c3a442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff0347139b83d52ca8d1a61d73c72b1"><td class="memTemplParams" colspan="2">template&lt;typename pointer , typename size_type &gt; </td></tr>
-<tr class="memitem:abff0347139b83d52ca8d1a61d73c72b1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlocation.html#abff0347139b83d52ca8d1a61d73c72b1">MemCopy</a> (pointer src_ptr, pointer dst_ptr, size_type size)</td></tr>
-<tr class="memdesc:abff0347139b83d52ca8d1a61d73c72b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">will copy memory of size s from src_pointer to dst_pointer.  <a href="#abff0347139b83d52ca8d1a61d73c72b1">More...</a><br /></td></tr>
-<tr class="separator:abff0347139b83d52ca8d1a61d73c72b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac3c15c2b298d0fc5ac2043170d5d7dce"><td class="memTemplParams" colspan="2">template&lt;typename pointer , typename size_type &gt; </td></tr>
+<tr class="memitem:ac3c15c2b298d0fc5ac2043170d5d7dce"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlocation.html#ac3c15c2b298d0fc5ac2043170d5d7dce">MemCopy</a> (pointer src_ptr, pointer dst_ptr, size_type size)</td></tr>
+<tr class="memdesc:ac3c15c2b298d0fc5ac2043170d5d7dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">will copy memory of size s from src_pointer to dst_pointer.  <a href="#ac3c15c2b298d0fc5ac2043170d5d7dce">More...</a><br /></td></tr>
+<tr class="separator:ac3c15c2b298d0fc5ac2043170d5d7dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -109,7 +113,7 @@ class location&lt; T &gt;</h3>
 <div class="fragment"><div class="line"><span class="comment">//to allocate a pointer of managed memory</span></div>
 <div class="line"></div>
 <div class="line"><a class="code" href="classlocation.html">location&lt;unified&gt;</a> raw_allocator;</div>
-<div class="line"><span class="keywordtype">void</span>* p=raw_allocator.<a class="code" href="classlocation.html#a4585657e6d2008e5fd2ef74378477427">New</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)); </div>
+<div class="line"><span class="keywordtype">void</span>* p=raw_allocator.<a class="code" href="classlocation.html#a4585657e6d2008e5fd2ef74378477427">New</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">raw_allocator.<a class="code" href="classlocation.html#a28896a9ef0db3ae89f7a7268c4c3a442">Delete</a>(p);</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -136,20 +140,29 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Will deallocate the storage pointed to by p. </p>
-<p>undevided behavior if p was allocated by a founction other then <a class="el" href="classlocation.html#a4585657e6d2008e5fd2ef74378477427" title="like new will allocate memory of size s and return a pointer to it ">location&lt;T&gt;::New</a> </p>
-
+<p>undevided behavior if p was allocated by a founction other then <a class="el" href="classlocation.html#a4585657e6d2008e5fd2ef74378477427" title="like new will allocate memory of size s and return a pointer to it ">location&lt;T&gt;::New</a></p>
+<div class="fragment"><div class="line"><span class="comment">// allocate an integer in unified memory</span></div>
+<div class="line"></div>
+<div class="line"><a class="code" href="classlocation.html">location&lt;unified&gt;</a> alloc;</div>
+<div class="line"><span class="keywordtype">void</span>* p=alloc.<a class="code" href="classlocation.html#a4585657e6d2008e5fd2ef74378477427">New</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><span class="comment">//---------do stuff---------//</span></div>
+<div class="line">alloc.<a class="code" href="classlocation.html#a28896a9ef0db3ae89f7a7268c4c3a442">Delete</a>(p);</div>
+</div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="abff0347139b83d52ca8d1a61d73c72b1"></a>
+<a class="anchor" id="ac3c15c2b298d0fc5ac2043170d5d7dce"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
 <div class="memtemplate">
 template&lt;typename pointer , typename size_type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void * <a class="el" href="classlocation.html">location</a>&lt; T &gt;::MemCopy&lt; pointer, size_type &gt; </td>
+          <td class="memname">void <a class="el" href="classlocation.html">location</a>&lt; T &gt;::MemCopy&lt; pointer, size_type &gt; </td>
           <td>(</td>
           <td class="paramtype">pointer&#160;</td>
           <td class="paramname"><em>src_ptr</em>, </td>
@@ -172,11 +185,25 @@ template&lt;typename pointer , typename size_type &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>will copy memory of size s from src_pointer to dst_pointer. </p>
-<p>this function will work regardless of where the pointers are pointer to in memory </p>
-
+<p>this static function will work regardless of where the pointers are pointer to in memory</p>
+<div class="fragment"><div class="line"><a class="code" href="classlocation.html">location&lt;host&gt;</a> alloc_host;</div>
+<div class="line"><a class="code" href="classlocation.html">location&lt;device&gt;</a> alloc_device;</div>
+<div class="line"><span class="keywordtype">void</span>* p=alloc_host.<a class="code" href="classlocation.html#a4585657e6d2008e5fd2ef74378477427">New</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><span class="keywordtype">void</span>* q=alloc_device.<a class="code" href="classlocation.html#a4585657e6d2008e5fd2ef74378477427">New</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"></div>
+<div class="line">*p=7;</div>
+<div class="line"></div>
+<div class="line"><a class="code" href="classlocation.html">location&lt;host&gt;</a>.<a class="code" href="classlocation.html#ac3c15c2b298d0fc5ac2043170d5d7dce">MemCopy</a>(p,q,<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><span class="comment">// *q now is equal to 7</span></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="a4585657e6d2008e5fd2ef74378477427"></a>
@@ -196,7 +223,13 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>like new will allocate memory of size s and return a pointer to it </p>
-
+<div class="fragment"><div class="line"><span class="comment">// allocate an integer in unified memory</span></div>
+<div class="line"></div>
+<div class="line"><a class="code" href="classlocation.html">location&lt;unified&gt;</a> alloc;</div>
+<div class="line"><span class="keywordtype">void</span>* p=alloc.<a class="code" href="classlocation.html#a4585657e6d2008e5fd2ef74378477427">New</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><span class="comment">//---------do stuff---------//</span></div>
+<div class="line">alloc.<a class="code" href="classlocation.html#a28896a9ef0db3ae89f7a7268c4c3a442">Delete</a>(p);</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

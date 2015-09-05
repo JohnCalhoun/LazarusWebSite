@@ -104,12 +104,13 @@ struct allocation_policy&lt; T, L &gt;</h3>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="comment">//to insitiate a allocater with buddy block strategy on the device and then allocate</span></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><span class="keyword">typedef</span> <a class="code" href="structallocation__policy.html">allocation_policy&lt;buddy_alloc_p,device&gt;</a> Allocator;</div>
-<div class="line">Allocator <a class="code" href="structallocation__policy.html#ae977ce6b06e77a263a7a1b23fcb4601f">allocator</a>;</div>
-<div class="line">Allocator::pointer p=allocator.allocatoe(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)*2);</div>
+<div class="fragment"><div class="line">  <span class="comment">//to insitiate a allocater with buddy block strategy on the device and then</span></div>
+<div class="line">*allocate</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">  <span class="keyword">typedef</span> <a class="code" href="structallocation__policy.html">allocation_policy&lt;int,device&gt;</a> Allocator;</div>
+<div class="line">  Allocator <a class="code" href="structallocation__policy.html#ae977ce6b06e77a263a7a1b23fcb4601f">allocator</a>;</div>
+<div class="line">  Allocator::pointer p=allocator.allocatoe(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)*2);</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ae977ce6b06e77a263a7a1b23fcb4601f"></a>
 <div class="memitem">

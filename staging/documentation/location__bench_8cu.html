@@ -81,7 +81,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">location_bench.cu File Reference</div>  </div>
 </div><!--header-->
@@ -105,16 +106,23 @@ Macros</h2></td></tr>
 <tr class="separator:ae36802a4974b5f2ea3a8f36ef242e7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bef949bb7bdedff75b2f85206c40314"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="location__bench_8cu.html#a2bef949bb7bdedff75b2f85206c40314">LOCATION_TESTS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a2bef949bb7bdedff75b2f85206c40314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a173800fc9bdcb6837ba50079e29da9d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="location__bench_8cu.html#a173800fc9bdcb6837ba50079e29da9d4">CASE</a>(Type,  name,  Case)                                                                                  </td></tr>
-<tr class="separator:a173800fc9bdcb6837ba50079e29da9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50399df7917116b2112b53e5e6db244"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="location__bench_8cu.html#ae50399df7917116b2112b53e5e6db244">CASE</a>(Type,  name,  Case)                                                                                                                                      </td></tr>
+<tr class="separator:ae50399df7917116b2112b53e5e6db244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4c28686235941bc5e6bb9ca5785594d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="location__bench_8cu.html#a4c28686235941bc5e6bb9ca5785594d0">CASE</a> (BASELINE_F, policy_HOST, <a class="el" href="structhost.html">host</a>)</td></tr>
 <tr class="separator:a4c28686235941bc5e6bb9ca5785594d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbf1fb27b4d02b6a5aae8683049ca7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="location__bench_8cu.html#abdbf1fb27b4d02b6a5aae8683049ca7d">CASE</a> (BENCHMARK_F, policy_DEVICE, <a class="el" href="structdevice.html">device</a>) CASE(BENCHMARK_F</td></tr>
+<tr class="separator:abdbf1fb27b4d02b6a5aae8683049ca7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3c424114b98e1f33e8852b97b7891af7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="location__bench_8cu.html#a3c424114b98e1f33e8852b97b7891af7">policy_PINNED</a></td></tr>
+<tr class="separator:a3c424114b98e1f33e8852b97b7891af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a173800fc9bdcb6837ba50079e29da9d4"></a>
+<a class="anchor" id="ae50399df7917116b2112b53e5e6db244"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -143,10 +151,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">Type(LocationBenchmark, name, <a class="code" href="classLocationFixture.html">LocationFixture&lt;Case&gt;</a>, <a class="code" href="location__bench_8cu.html#a8cd99b916f0f61230de9a3147a4f9697">LOCATION_SAMPLES</a>, \</div>
-<div class="line">       <a class="code" href="location__bench_8cu.html#ae36802a4974b5f2ea3a8f36ef242e7a4">LOCATION_OPERATIONS</a>) {                                            \</div>
-<div class="line">    this-&gt;Benchmark_Function();                                          \</div>
-<div class="line">  };</div>
+<b>Value:</b><div class="fragment"><div class="line">Type(LocationBenchmark, name, <a class="code" href="classLocationFixture.html">LocationFixture&lt;Case&gt;</a>, <a class="code" href="location__bench_8cu.html#a8cd99b916f0f61230de9a3147a4f9697">LOCATION_SAMPLES</a>, <a class="code" href="location__bench_8cu.html#ae36802a4974b5f2ea3a8f36ef242e7a4">LOCATION_OPERATIONS</a>) { \</div>
+<div class="line">          this-&gt;Benchmark_Function();                                                              \</div>
+<div class="line">     };</div>
 <div class="ttc" id="classLocationFixture_html"><div class="ttname"><a href="classLocationFixture.html">LocationFixture</a></div><div class="ttdef"><b>Definition:</b> location_bench.cu:14</div></div>
 <div class="ttc" id="location__bench_8cu_html_ae36802a4974b5f2ea3a8f36ef242e7a4"><div class="ttname"><a href="location__bench_8cu.html#ae36802a4974b5f2ea3a8f36ef242e7a4">LOCATION_OPERATIONS</a></div><div class="ttdeci">#define LOCATION_OPERATIONS</div><div class="ttdef"><b>Definition:</b> location_bench.cu:9</div></div>
 <div class="ttc" id="location__bench_8cu_html_a8cd99b916f0f61230de9a3147a4f9697"><div class="ttname"><a href="location__bench_8cu.html#a8cd99b916f0f61230de9a3147a4f9697">LOCATION_SAMPLES</a></div><div class="ttdeci">#define LOCATION_SAMPLES</div><div class="ttdef"><b>Definition:</b> location_bench.cu:8</div></div>
@@ -216,6 +223,51 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abdbf1fb27b4d02b6a5aae8683049ca7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CASE </td>
+          <td>(</td>
+          <td class="paramtype">BENCHMARK_F&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">policy_DEVICE&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdevice.html">device</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a3c424114b98e1f33e8852b97b7891af7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">policy_PINNED</td>
         </tr>
       </table>
 </div><div class="memdoc">
