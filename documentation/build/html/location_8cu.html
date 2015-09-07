@@ -80,7 +80,8 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">location.cu File Reference</div>  </div>
 </div><!--header-->
@@ -89,6 +90,9 @@
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;new&gt;</code><br />
 <code>#include &lt;cuda.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cuda_occupancy.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="Handle_8cpp.html">Handle.cpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -112,6 +116,12 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a73e0784dccb3cf912102a20ca739181b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="location_8cu.html#a73e0784dccb3cf912102a20ca739181b">LOCATION_POLICY_H</a></td></tr>
 <tr class="separator:a73e0784dccb3cf912102a20ca739181b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae5238b6cdfba3350ec000b28c89cafcb"><td class="memTemplParams" colspan="2">template&lt;typename pointer , typename Item &gt; </td></tr>
+<tr class="memitem:ae5238b6cdfba3350ec000b28c89cafcb"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="location_8cu.html#ae5238b6cdfba3350ec000b28c89cafcb">cuda_fill</a> (pointer dst, int count, Item item)</td></tr>
+<tr class="separator:ae5238b6cdfba3350ec000b28c89cafcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a73e0784dccb3cf912102a20ca739181b"></a>
@@ -120,6 +130,41 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define LOCATION_POLICY_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ae5238b6cdfba3350ec000b28c89cafcb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename pointer , typename Item &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void cuda_fill </td>
+          <td>(</td>
+          <td class="paramtype">pointer&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Item&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -85,92 +85,30 @@
 <div class="title">iterator_test.cu File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;unified_location_p.cu&gt;</code><br />
-<code>#include &lt;host_location_p.hpp&gt;</code><br />
-<code>#include &lt;device_location_p.cu&gt;</code><br />
-<code>#include &lt;pinned_location_p.cu&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="HashedArrayTree_8cu.html">HashedArrayTree.cu</a>&gt;</code><br />
 <code>#include &lt;gtest/gtest.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="MacroUtilities_8cpp.html">MacroUtilities.cpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="buddy__alloc__p_8cpp.html">buddy_alloc_p.cpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="HashedArrayTree_8cu.html">HashedArrayTree.cu</a>&gt;</code><br />
-<code>#include &lt;iterator.cu&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &quot;iterator.test&quot;</code><br />
+<code>#include &quot;<a class="el" href="MacroUtilities_8cpp.html">MacroUtilities.cpp</a>&quot;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &quot;handle.test&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIteratorTest.html">IteratorTest&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIteratorTest.html">IteratorTest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:abe14ccc8dd2f61d2740cb9cf82d82950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator__test_8cu.html#abe14ccc8dd2f61d2740cb9cf82d82950">ITERATOR_THREADS</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:abe14ccc8dd2f61d2740cb9cf82d82950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbbcf3c42c997889127cc676754a6fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator__test_8cu.html#abbbcf3c42c997889127cc676754a6fea">HOST</a>&#160;&#160;&#160;host_location_policy</td></tr>
-<tr class="separator:abbbcf3c42c997889127cc676754a6fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a550689d61a261b1e4816a85a70cc5565"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator__test_8cu.html#a550689d61a261b1e4816a85a70cc5565">UNIFIED</a>&#160;&#160;&#160;unified_location_policy</td></tr>
-<tr class="separator:a550689d61a261b1e4816a85a70cc5565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775d096fbc3988fb7ed858b79ef44e22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator__test_8cu.html#a775d096fbc3988fb7ed858b79ef44e22">DEVICE</a>&#160;&#160;&#160;device_location_policy</td></tr>
-<tr class="separator:a775d096fbc3988fb7ed858b79ef44e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa09e899cbc5c94d25422680ce5fac4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator__test_8cu.html#adfa09e899cbc5c94d25422680ce5fac4">PINNED</a>&#160;&#160;&#160;pinned_location_policy</td></tr>
-<tr class="separator:adfa09e899cbc5c94d25422680ce5fac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b76cbb220f26aac3bcb3f903c433708"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator__test_8cu.html#a2b76cbb220f26aac3bcb3f903c433708">HANDLE_THREADS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a2b76cbb220f26aac3bcb3f903c433708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a775d096fbc3988fb7ed858b79ef44e22"></a>
+<a class="anchor" id="a2b76cbb220f26aac3bcb3f903c433708"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEVICE&#160;&#160;&#160;device_location_policy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abbbcf3c42c997889127cc676754a6fea"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HOST&#160;&#160;&#160;host_location_policy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abe14ccc8dd2f61d2740cb9cf82d82950"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ITERATOR_THREADS&#160;&#160;&#160;8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="adfa09e899cbc5c94d25422680ce5fac4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PINNED&#160;&#160;&#160;pinned_location_policy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a550689d61a261b1e4816a85a70cc5565"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define UNIFIED&#160;&#160;&#160;unified_location_policy</td>
+          <td class="memname">#define HANDLE_THREADS&#160;&#160;&#160;8</td>
         </tr>
       </table>
 </div><div class="memdoc">

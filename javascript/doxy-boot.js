@@ -3,7 +3,7 @@ $( document ).ready(function() {
     $("div.headertitle").addClass("page-header");
     $("div.title").addClass("h1");
 //add icons to verious things
-
+/*
     $('li > a[href="index.html"] > span').before("<i class='glyphicon glyphicon-home'></i> ");
     $('li > a[href="index.html"] > span').text('Flamingo');
     $('li > a[href="modules.html"] > span').before("<i class='glyphicon glyphicon-stop'></i> ");
@@ -17,7 +17,7 @@ $( document ).ready(function() {
     $('li > a[href="functions_enum.html"] > span').before("<i class='glyphicon glyphicon-th-large'></i> ");
     $('li > a[href="functions_eva.html"] > span').before("<i class='glyphicon glyphicon-th-large'></i> ");
   $('li > a[href="files.html"] > span').before("<i class='glyphicon glyphicon-file'></i> ");
-
+*/
    $('img[src="ftv2ns.png"]').replaceWith('<span class="label label-primary">N</span> ');
     $('img[src="ftv2cl.png"]').replaceWith('<span class="label label-primary">C</span> ');
 
