@@ -113,8 +113,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa24513434fd1bb0782c71e816c009f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb7c3f16b1b9e80df7a68c772f14a915"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAllocationFixture.html#acb7c3f16b1b9e80df7a68c772f14a915">tearDown</a> ()</td></tr>
 <tr class="separator:acb7c3f16b1b9e80df7a68c772f14a915"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc98e54e90731210cd5c391fc5c7401"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAllocationFixture.html#a6cc98e54e90731210cd5c391fc5c7401">DEFINE</a> (SingleAllocation, <a class="el" href="allocation__test_8cu.html#a7e1abcea43fa51e30cadcdfc25374346">ALLOCATION_THREADS</a>) DEFINE(MultipleAllocation</td></tr>
-<tr class="separator:a6cc98e54e90731210cd5c391fc5c7401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048d792d1983486e437e7baf5e879397"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAllocationFixture.html#a048d792d1983486e437e7baf5e879397">SingleAllocation</a> ()</td></tr>
+<tr class="separator:a048d792d1983486e437e7baf5e879397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac051e7a118b1be5dd4649e7834573f76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAllocationFixture.html#ac051e7a118b1be5dd4649e7834573f76">MultipleAllocation</a> ()</td></tr>
+<tr class="separator:ac051e7a118b1be5dd4649e7834573f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add31061347950e0caac03c712eed75b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAllocationFixture.html#add31061347950e0caac03c712eed75b8">RandomAllocation</a> ()</td></tr>
+<tr class="separator:add31061347950e0caac03c712eed75b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -185,34 +189,6 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6cc98e54e90731210cd5c391fc5c7401"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classAllocationFixture.html">AllocationFixture</a>&lt; T &gt;::DEFINE </td>
-          <td>(</td>
-          <td class="paramtype">SingleAllocation&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="allocation__test_8cu.html#a7e1abcea43fa51e30cadcdfc25374346">ALLOCATION_THREADS</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a530d479fcdab2feaa0ec92f0ed5f4646"></a>
 <div class="memitem">
 <div class="memproto">
@@ -234,6 +210,40 @@ template&lt;typename T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac051e7a118b1be5dd4649e7834573f76"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classAllocationFixture.html">AllocationFixture</a>&lt; T &gt;::MultipleAllocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add31061347950e0caac03c712eed75b8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classAllocationFixture.html">AllocationFixture</a>&lt; T &gt;::RandomAllocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -260,6 +270,23 @@ template&lt;typename T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a048d792d1983486e437e7baf5e879397"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classAllocationFixture.html">AllocationFixture</a>&lt; T &gt;::SingleAllocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

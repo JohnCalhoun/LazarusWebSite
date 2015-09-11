@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Iceland|Megrim);
+@import url(https://fonts.googleapis.com/css?family=Iceland|Megrim|Robot+Mono);
 .concrete-background {
   background-image: url("../images/concrete_texture_1.jpg"); }
 
@@ -2357,7 +2357,8 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit; }
+  color: inherit;
+  letter-spacing: 2px; }
   h1 small,
   h1 .small, h2 small,
   h2 .small, h3 small,
@@ -2715,6 +2716,7 @@ pre {
 .container {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px; }
   .container:before, .container:after {
@@ -2735,6 +2737,7 @@ pre {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px; }
   .container-fluid:before, .container-fluid:after {
@@ -4982,7 +4985,8 @@ tbody.collapse.in {
   font-size: 25px;
   line-height: 28px;
   height: 50px;
-  font-family: 'Megrim'; }
+  font-family: 'Megrim';
+  letter-spacing: 2px; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
   .navbar-brand > img {
