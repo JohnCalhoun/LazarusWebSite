@@ -94,10 +94,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5472deca73bf82e8eae43cbb1dc065f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#a5472deca73bf82e8eae43cbb1dc065f9">Direction</a> { <a class="el" href="classHashedArrayTree.html#a5472deca73bf82e8eae43cbb1dc065f9a8c0ee710e9b7de8735ffef099cf09b8c">RIGHT</a>, 
-<a class="el" href="classHashedArrayTree.html#a5472deca73bf82e8eae43cbb1dc065f9ae2b2127dd895c9c7b00874b4b3f02b35">LEFT</a>
- }<tr class="separator:a5472deca73bf82e8eae43cbb1dc065f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 <tr class="memitem:a1abf356b9b99c8347b85ad78f74ecce4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structallocation__policy.html">allocation_policy</a>&lt; T, L &gt;::allocator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#a1abf356b9b99c8347b85ad78f74ecce4">allocator_type</a></td></tr>
 <tr class="separator:a1abf356b9b99c8347b85ad78f74ecce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1cc5b49c69b6660fddbc943e6e39951"><td class="memItemLeft" align="right" valign="top">typedef L&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#ad1cc5b49c69b6660fddbc943e6e39951">Location</a></td></tr>
@@ -141,8 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8bdb639a1bc3812909d56c3c46335215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e420b2286f3068bd8e608b4649e1dc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#a6e420b2286f3068bd8e608b4649e1dc2">remove_end</a> (int)</td></tr>
 <tr class="separator:a6e420b2286f3068bd8e608b4649e1dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bcbf403ba4a6f62d0f4eacf9e436be3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#a5bcbf403ba4a6f62d0f4eacf9e436be3">shift</a> (<a class="el" href="classHashedArrayTree_1_1iterator.html">iterator</a>, int, <a class="el" href="classHashedArrayTree.html#a5472deca73bf82e8eae43cbb1dc065f9">Direction</a>)</td></tr>
-<tr class="separator:a5bcbf403ba4a6f62d0f4eacf9e436be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f23fb9eab14acd72c33def321f70c2d"><td class="memTemplParams" colspan="2">template&lt;typename D &gt; </td></tr>
+<tr class="memitem:a6f23fb9eab14acd72c33def321f70c2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#a6f23fb9eab14acd72c33def321f70c2d">shift</a> (<a class="el" href="classHashedArrayTree_1_1iterator.html">iterator</a>, int)</td></tr>
+<tr class="separator:a6f23fb9eab14acd72c33def321f70c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab318f528394ea324294d2a5842b2478f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#ab318f528394ea324294d2a5842b2478f">copy</a> (<a class="el" href="classHashedArrayTree_1_1iterator.html">iterator</a>, int, T &amp;)</td></tr>
 <tr class="separator:ab318f528394ea324294d2a5842b2478f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cef7a4d6866e992a18812f7d1e879ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#a1cef7a4d6866e992a18812f7d1e879ea">copy</a> (<a class="el" href="classHashedArrayTree_1_1iterator.html">iterator</a>, int, <a class="el" href="classHashedArrayTree_1_1iterator.html">iterator</a>)</td></tr>
@@ -201,6 +198,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adddd778bdcacd8a03007a3df5a97189d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b3cbbcf15379e8f0086e2bd2b72e869"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#a8b3cbbcf15379e8f0086e2bd2b72e869">try_lock</a> ()</td></tr>
 <tr class="separator:a8b3cbbcf15379e8f0086e2bd2b72e869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1921a3b89c3a306f22c36ac149b093c"><td class="memTemplParams" colspan="2">template&lt;typename D &gt; </td></tr>
+<tr class="memitem:aa1921a3b89c3a306f22c36ac149b093c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#aa1921a3b89c3a306f22c36ac149b093c">shift</a> (<a class="el" href="classHashedArrayTree.html">HashedArrayTree</a>&lt; T, L &gt;::<a class="el" href="classHashedArrayTree_1_1iterator.html">iterator</a> it, int n)</td></tr>
+<tr class="separator:aa1921a3b89c3a306f22c36ac149b093c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf502c650fc07731d4d555f78266d12"><td class="memTemplParams" colspan="2">template&lt;class iter &gt; </td></tr>
 <tr class="memitem:abcf502c650fc07731d4d555f78266d12"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classHashedArrayTree.html">HashedArrayTree</a>&lt; T, L &gt;::<a class="el" href="classHashedArrayTree_1_1iterator.html">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classHashedArrayTree.html#abcf502c650fc07731d4d555f78266d12">insert</a> (<a class="el" href="classHashedArrayTree.html">HashedArrayTree</a>&lt; T, L &gt;::<a class="el" href="classHashedArrayTree.html#ab604988ee168cf2cd012e44eda6e4b86">const_iterator</a> iter_1, iter iter_2, iter iter_3)</td></tr>
 <tr class="separator:abcf502c650fc07731d4d555f78266d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,27 +370,6 @@ template&lt;typename T, typename L&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a5472deca73bf82e8eae43cbb1dc065f9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename L&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classHashedArrayTree.html#a5472deca73bf82e8eae43cbb1dc065f9">HashedArrayTree::Direction</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5472deca73bf82e8eae43cbb1dc065f9a8c0ee710e9b7de8735ffef099cf09b8c"></a>RIGHT&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5472deca73bf82e8eae43cbb1dc065f9ae2b2127dd895c9c7b00874b4b3f02b35"></a>LEFT&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
 
 </div>
 </div>
@@ -1112,11 +1091,13 @@ template&lt;typename T , typename L &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5bcbf403ba4a6f62d0f4eacf9e436be3"></a>
+<a class="anchor" id="a6f23fb9eab14acd72c33def321f70c2d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T, typename L&gt; </div>
+<div class="memtemplate">
+template&lt;typename D &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classHashedArrayTree.html">HashedArrayTree</a>&lt; T, L &gt;::shift </td>
@@ -1128,13 +1109,37 @@ template&lt;typename T, typename L&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1921a3b89c3a306f22c36ac149b093c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename L&gt; </div>
+<div class="memtemplate">
+template&lt;typename D &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classHashedArrayTree.html">HashedArrayTree</a>&lt; T, L &gt;::shift </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHashedArrayTree.html">HashedArrayTree</a>&lt; T, L &gt;::<a class="el" href="classHashedArrayTree_1_1iterator.html">iterator</a>&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classHashedArrayTree.html#a5472deca73bf82e8eae43cbb1dc065f9">Direction</a>&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

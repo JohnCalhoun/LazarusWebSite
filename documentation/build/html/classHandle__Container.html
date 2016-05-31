@@ -90,8 +90,8 @@
 Public Types</h2></td></tr>
 <tr class="memitem:a641a4c865e2583440416d35a20af2a4e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classHandle.html">Handle</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHandle__Container.html#a641a4c865e2583440416d35a20af2a4e">Handle_ptr</a></td></tr>
 <tr class="separator:a641a4c865e2583440416d35a20af2a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f93d8dc1c65917bd8e88051f038cfd4"><td class="memItemLeft" align="right" valign="top">typedef boost::unordered_map&lt; int, <a class="el" href="classHandle__Container.html#a641a4c865e2583440416d35a20af2a4e">Handle_ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHandle__Container.html#a8f93d8dc1c65917bd8e88051f038cfd4">Map</a></td></tr>
-<tr class="separator:a8f93d8dc1c65917bd8e88051f038cfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad760a338e0aa8694d596b07837cf31b5"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::unordered_map&lt; int, <a class="el" href="classHandle__Container.html#a641a4c865e2583440416d35a20af2a4e">Handle_ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHandle__Container.html#ad760a338e0aa8694d596b07837cf31b5">Map</a></td></tr>
+<tr class="separator:ad760a338e0aa8694d596b07837cf31b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71040c1cf7b8fe8f567a6a481c206a98"><td class="memItemLeft" align="right" valign="top">typedef Map::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHandle__Container.html#a71040c1cf7b8fe8f567a6a481c206a98">iter</a></td></tr>
 <tr class="separator:a71040c1cf7b8fe8f567a6a481c206a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a8c00b24f1917647e3a778228bdca9"><td class="memItemLeft" align="right" valign="top">typedef Map::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHandle__Container.html#a77a8c00b24f1917647e3a778228bdca9">iterator</a></td></tr>
@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a94198130a3d08d0bdafa359e164128e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle__Container.html#a8f93d8dc1c65917bd8e88051f038cfd4">Map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHandle__Container.html#a94198130a3d08d0bdafa359e164128e0">map</a></td></tr>
+<tr class="memitem:a94198130a3d08d0bdafa359e164128e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle__Container.html#ad760a338e0aa8694d596b07837cf31b5">Map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHandle__Container.html#a94198130a3d08d0bdafa359e164128e0">map</a></td></tr>
 <tr class="separator:a94198130a3d08d0bdafa359e164128e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab98facbc431bd050a4e32e50fb45d951"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle__Container.html#a1298f9406c9f8476e8bb456e96862310">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHandle__Container.html#ab98facbc431bd050a4e32e50fb45d951">mut</a></td></tr>
 <tr class="separator:ab98facbc431bd050a4e32e50fb45d951"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,14 +166,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8f93d8dc1c65917bd8e88051f038cfd4"></a>
+<a class="anchor" id="ad760a338e0aa8694d596b07837cf31b5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::unordered_map&lt;int, <a class="el" href="classHandle__Container.html#a641a4c865e2583440416d35a20af2a4e">Handle_ptr</a>&gt; <a class="el" href="classHandle__Container.html">Handle_Container</a>&lt; T &gt;::<a class="el" href="classHandle__Container.html#a8f93d8dc1c65917bd8e88051f038cfd4">Map</a></td>
+          <td class="memname">typedef std::tr1::unordered_map&lt;int, <a class="el" href="classHandle__Container.html#a641a4c865e2583440416d35a20af2a4e">Handle_ptr</a>&gt; <a class="el" href="classHandle__Container.html">Handle_Container</a>&lt; T &gt;::<a class="el" href="classHandle__Container.html#ad760a338e0aa8694d596b07837cf31b5">Map</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -326,7 +326,7 @@ template&lt;typename T&gt; </div>
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classHandle__Container.html#a8f93d8dc1c65917bd8e88051f038cfd4">Map</a> <a class="el" href="classHandle__Container.html">Handle_Container</a>&lt; T &gt;::map</td>
+          <td class="memname"><a class="el" href="classHandle__Container.html#ad760a338e0aa8694d596b07837cf31b5">Map</a> <a class="el" href="classHandle__Container.html">Handle_Container</a>&lt; T &gt;::map</td>
         </tr>
       </table>
 </div><div class="memdoc">

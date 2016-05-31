@@ -95,6 +95,7 @@
 <code>#include &lt;<a class="el" href="Handle_8cpp.html">Handle.cpp</a>&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;thrust/iterator/reverse_iterator.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -124,15 +125,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ae5238b6cdfba3350ec000b28c89cafcb"><td class="memTemplParams" colspan="2">template&lt;typename pointer , typename Item &gt; </td></tr>
 <tr class="memitem:ae5238b6cdfba3350ec000b28c89cafcb"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="location_8cu.html#ae5238b6cdfba3350ec000b28c89cafcb">cuda_fill</a> (pointer dst, int count, Item item)</td></tr>
 <tr class="separator:ae5238b6cdfba3350ec000b28c89cafcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7598ffb18ca3190168cd8d6556c82aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af7598ffb18ca3190168cd8d6556c82aa"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="location_8cu.html#af7598ffb18ca3190168cd8d6556c82aa">cuda_overlapextract</a> (T, T, int, int, int)</td></tr>
-<tr class="separator:af7598ffb18ca3190168cd8d6556c82aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32bf4eb526e81f80c15f09711c6e6feb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename L &gt; </td></tr>
+<tr class="memitem:aae3e39261e1d662daa95ecf0e1cd39e8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:aae3e39261e1d662daa95ecf0e1cd39e8"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="location_8cu.html#aae3e39261e1d662daa95ecf0e1cd39e8">cuda_overlapextract</a> (T, U *, int, int, int)</td></tr>
+<tr class="separator:aae3e39261e1d662daa95ecf0e1cd39e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bf4eb526e81f80c15f09711c6e6feb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a32bf4eb526e81f80c15f09711c6e6feb"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="location_8cu.html#a32bf4eb526e81f80c15f09711c6e6feb">cuda_blockmove</a> (T, T, int, int, int)</td></tr>
 <tr class="separator:a32bf4eb526e81f80c15f09711c6e6feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec75d1d330a4ea71010902ffdc597727"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aec75d1d330a4ea71010902ffdc597727"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="location_8cu.html#aec75d1d330a4ea71010902ffdc597727">cuda_overlapinsert</a> (T, T, int, int, int)</td></tr>
-<tr class="separator:aec75d1d330a4ea71010902ffdc597727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281588454a633e80fb757259320a9992"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a281588454a633e80fb757259320a9992"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="location_8cu.html#a281588454a633e80fb757259320a9992">cuda_overlapinsert</a> (T, U *, int, int, int)</td></tr>
+<tr class="separator:a281588454a633e80fb757259320a9992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fdf159dfb950bc26b810c1aa3bdde88"><td class="memTemplParams" colspan="2">template&lt;typename pointer , typename value_type &gt; </td></tr>
+<tr class="memitem:a2fdf159dfb950bc26b810c1aa3bdde88"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="location_8cu.html#a2fdf159dfb950bc26b810c1aa3bdde88">cuda_memmove</a> (pointer, pointer, value_type *, int, int, int, int *, int *)</td></tr>
+<tr class="separator:a2fdf159dfb950bc26b810c1aa3bdde88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a73e0784dccb3cf912102a20ca739181b"></a>
@@ -152,7 +156,7 @@ Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename L &gt; </div>
+template&lt;typename T , typename U &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">__global__ void cuda_blockmove </td>
@@ -228,11 +232,75 @@ template&lt;typename pointer , typename Item &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af7598ffb18ca3190168cd8d6556c82aa"></a>
+<a class="anchor" id="a2fdf159dfb950bc26b810c1aa3bdde88"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename pointer , typename value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void cuda_memmove </td>
+          <td>(</td>
+          <td class="paramtype">pointer&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pointer&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae3e39261e1d662daa95ecf0e1cd39e8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">__global__ void cuda_overlapextract </td>
@@ -243,7 +311,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">U *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -274,11 +342,11 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aec75d1d330a4ea71010902ffdc597727"></a>
+<a class="anchor" id="a281588454a633e80fb757259320a9992"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename U &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">__global__ void cuda_overlapinsert </td>
@@ -289,7 +357,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">U *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
